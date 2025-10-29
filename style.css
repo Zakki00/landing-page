@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+title{
+    text-align: center;
+    color: #4e1616;
+    font-size: 50px;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: black;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/Black\ and\ Teal\ Modern\ Web\ Developer\ Presentation.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+.judul {
+  position: absolute;     /* posisikan bebas di layar */
+  top: 50%;               /* ambil 50% tinggi layar */
+  left: 50%;              /* ambil 50% lebar layar */
+  transform: translate(-50%, -50%); /* geser biar pas tengah */
+  text-align: center;     /* teks di dalamnya rata tengah */
+}
+
+.judul h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+.judul p {
+  font-size: 20px;
+  text-align: justify;
+  color: #dddddd;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.judul h1{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: #b61e1e;
+    margin: auto;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    align-items: center; /* vertikal tengah */
+    justify-content: center; /* horizontal tengah */
+    gap: 180px; /* jarak antara .teks dan .teks1 */
+    text-align: center;        /* biar semua isi (h2 & p) rata tengah */
+    color: white;              /* warna teks (ubah sesuai background kamu) */
+    margin-top: 100px;         /* jarak dari atas layar */
+    font-family: "Poppins", sans-serif;
+    position: absolute; /* absolut di sini du gunakan untuk posisi yang bisa di pindahakan menggunakan top dan left */
+    top: 70%;
+    left: 1%;
+    border-radius: 20px;
+}
+
+.teks h2 {
+    font-size: 30px;           /* lebih kecil dari h2 */
+    color: #dddddd;            /* warna lebih lembut dari judul */
+    line-height: 1.6;          /* jarak antar baris */
+    max-width: 700px;          /* biar teks nggak terlalu lebar */
+    margin: 0 auto;            /* tengah secara horizontal */
+    text-align: justify;
+}
+
+.teks p {
+    font-size: 17px;           /* ukuran nama besar */
+    font-weight: 700;          /* tebal */
+    margin-bottom: 15px;       /* jarak antara nama dan paragraf */
+    letter-spacing: 1px;       /* spasi huruf biar elegan */  
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+ 
