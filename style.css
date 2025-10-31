@@ -103,6 +103,7 @@ nav a:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    flex-wrap: nowrap;
     
 }
 .about_block {
@@ -160,6 +161,38 @@ nav a:hover {
 .about_block:hover p{
   opacity: 1; /* teks muncul */
 }
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* dari horizontal jadi vertikal */
+    height: auto; /* biar fleksibel */
+  }
+
+  .about_block {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .about_block:hover {
+    flex: none; /* hilangkan efek melar */
+  }
+
+  .about_block:hover img {
+    filter: brightness(80%); /* biar tetap ada efek ringan */
+  }
+
+  #about:hover .about_block:not(:hover) {
+    flex: none;
+    filter: brightness(100%);
+  }
+
+  .about_block h2 {
+    font-size: 6vw;
+  }
+
+  .about_block p {
+    font-size: 4vw;
+  }
+}
 
 
 #konten{
@@ -171,10 +204,28 @@ nav a:hover {
   width: 25%;
   height: 100%;
 }
-.gambar-konten:hover img{
-  filter: blur(20%);
-  transition: all 0.5s ease; /* animasi halus */
+.gambar-konten {
+  width: 25%;
+  height: 100%;
 }
+
+.gambar-konten img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s ease; /* taruh di sini agar efek balik juga smooth */
+}
+
+.gambar-konten:hover img {
+  filter: blur(10px) brightness(70%);
+  transform: scale(1.05);
+}
+
+.gambar-konten:hover img {
+  filter: blur(10px) brightness(70%);
+  transform: scale(1.05);
+}
+
 .konten_gambar{
   width: 100%;
   height: 100%;
@@ -219,13 +270,25 @@ hr {
   margin-top: 50px;
 }
 .konten-block{
-  
   background-color: #05eeff;
   height: 50vh;
   width: 30vh;
   border-radius: 20px;
   margin: 10px;
+  transition: all 0.8s ease; /* taruh di sini agar efek balik juga smooth */
+  cursor: pointer;
+
 }
-.
+.konten-block:hover{
+  transform: scale(1.05);
+  filter: brightness(110%) drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+}
+
+.konten-block .konten_gambar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 
