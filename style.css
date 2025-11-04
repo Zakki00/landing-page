@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Momo+Trust+Display&family=Pacifico&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -30,72 +31,66 @@ nav ul{
     gap: 50px;
     color: white;
     font-size: clamp(12px, 2.5vw, 22px);
-    font-family: "Poppins", sans-serif;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
+    font-family: "Momo Trust Display", sans-serif;
 }
 .navbar a{
     text-decoration: none;
     color: white;
     font-size: clamp(12px, 2.5vw, 22px);
-    font-family: "Poppins", sans-serif;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 nav a:hover {
-  color: #3e474d;
+  color: #b5b81e;
+  transition: color 0.3s ease;
 }
 
 #home{ 
-    background-image: url(image/background.png);
+   
     height: 100vh;
-    color: #dddddd;
+    color: #6E2D11;
+    background-image: url('image/background_home.png');
 }
-
-.home_logo h1{
-    font-family: "Orbitron", sans-serif;
-    font-size: 4vw;
-    margin-bottom: 15px;
-}
-.home_logo{
-    height: 60vh;
+.home-content{
     display: flex;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100vh;
+   
+   
+   
 }
-    
-.logo {
-  width: clamp(60px, 10vw, 150px);
-  height: auto; /* biar proporsinya gak rusak */
-  border-radius: 50%;
+.promo-video{
+  width: 300px;   /* ukuran video */
+  height: 170px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+   margin: 5%;
 }
 
 .home_judul {
+   margin: 5%;
     height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-    /* background-color: aqua; */
     margin-bottom: 2vw;
+    
     
 }
 
 .home_judul h1 {
-    font-family: "Orbitron", sans-serif;
-    font-size: clamp(24px, 5vw, 60px);
+font-family: 'Playfair Display', serif;
+ font-size: 20vh;
     margin-bottom: 15px;
-    text-align: center;
 }
 .home_judul p {
   font-size: clamp(12px, 2.5vw, 22px);
-  text-align: center;
-  color: #dddddd;
+  
+  color: #6F2A0C;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -104,6 +99,7 @@ nav a:hover {
     width: 100%;
     height: 100vh;
     flex-wrap: nowrap;
+    overflow: hidden;
     
 }
 .about_block {
@@ -417,5 +413,74 @@ hr {
   display: inline-block;
 }
 
+#testimoni {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+}
+.testimoni-main-container{
+  background-color: #c70505;
 
+  min-height: 100vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* biar mulai dari kiri */
+  gap: 30px; /* jarak antar container */
+  position: relative;
+  padding-left: 5vh;
+}
 
+.testimoni-container {
+  background-color: #ffffff;
+  width: 100vh;
+  height: 15vh;
+  display: flex;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimoni-gmb-left {
+  background-color: #a34242;
+  width: 15vh;
+  height: 15vh;
+
+}
+
+.testimoni-gmb-right {
+  background-color: #ff9393;
+  width: 15vh;
+  height: 15vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+.testimoni-gmb-right img, .testimoni-gmb-left img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.testomni-paragraf {
+  background-color: #ffffff;
+  width: 85vh;
+  height: 15vh;
+}
+
+.testimoni-container:nth-child(1) {
+  transform: translateX(0);
+}
+.testimoni-container:nth-child(2) {
+  transform: translateX(50px);
+}
+.testimoni-container:nth-child(3) {
+  transform: translateX(100px);
+}
+.testimoni-container:nth-child(4) {
+  transform: translateX(150px);
+}
+.testimoni-second-container{
+  background-color: aquamarine;
+  min-height: 100vh;
+  width: 40%;
+  
+}
