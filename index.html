@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
     <title>Ovela</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#konten">konten</a></li>
-                <li><a href="#produk">Produk</a></li>
-                <li><a href="#testimoni">Testimoni</a></li>
-                <li><a href="#varian">Recomend</a></li>
-                <li><a href="#kualitas">kualitas</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">Ovela</div>
+        <button class="menu-toggle" id="menu-toggle">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#konten">Konten</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#varian">Recomend</a></li>
+          <li><a href="#kualitas">Kualitas</a></li>
+          <li><a href="#Visi-Misi">Visi-Misi</a></li>
+          <li><a href="#cta">Cta</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
         <section id="home">
             <div class="home-content">
@@ -29,11 +39,12 @@
                     <p>Elegance in Every Scent<br> parfum yang merayakan momen-momen halus dalam hidup dengan komposisi wangi yang hangat, tahan lama, dan selalu terasa mewah.</p>
                 </div>
                  <div class="promo-video">
-                    <video autoplay muted loop playsinline>
-                      <source src="video/marketing.mp4" type="video/mp4">
-                      Browser kamu tidak mendukung video tag.
-                    </video>
+                  <video autoplay muted loop playsinline>
+                    <source src="video/marketing2.mp4" type="video/mp4">
+                    Browser kamu tidak mendukung video tag.
+                  </video>
                 </div>
+
             </div>
             
              
@@ -65,72 +76,67 @@
          
         </section>
         <section id="konten">
-            
-            <div class="konten-teks">
-                <h2 id="judul_utama">Design. Code. Create..</h2>
-                <hr>
-                <p id="paragraf_utama">Bangun kehadiran digital yang benar-benar mencerminkan kualitas 
-                    bisnismu. Di sini, kami membantu mewujudkan website profesional yang 
-                    tidak hanya menarik secara visual, tetapi juga cepat, responsif, dan 
-                    dirancang untuk tumbuh bersama bisnismu. Kami percaya setiap detail 
-                    punya makna dari warna yang menegaskan identitas, hingga pengalaman 
-                    pengguna yang meninggalkan kesan pertama yang tak terlupakan. Saat 
-                    dunia bergerak ke arah digital, biarkan websitemu menjadi langkah 
-                    pasti menuju masa depan.
-                </p>
-
-                <div class="main-konten-block">
-                    <div class="konten-block">
-                        <img src="image/gambar_konten (1).png" alt=""  class="konten_gambar">
-                        <h2>Design. Code. Create.</h2>
-                    </div>
-                    <div class="konten-block">
-                        <img src="image/gambar_konten (2).png" alt="" class="konten_gambar">
-                        <h2>Build. Launch. Grow.</h2>
-                    </div>
-                    <div class="konten-block">
-                        <img src="image/gambar_konten (3).png" alt="" class="konten_gambar">
-                        <h2>Smart. Fast. Reliable.</h2>
-                    </div>
-                </div>
-                
+          <div class="konten-teks">
+            <h2 id="judul_utama">Design. Code. Create.</h2>
+            <hr>
+            <p id="paragraf_utama">
+              Bangun kehadiran digital yang benar-benar mencerminkan kualitas bisnismu. 
+              Di sini, kami membantu mewujudkan website profesional yang tidak hanya menarik secara visual, 
+              tetapi juga cepat, responsif, dan dirancang untuk tumbuh bersama bisnismu. 
+              Kami percaya setiap detail punya makna — dari warna yang menegaskan identitas, 
+              hingga pengalaman pengguna yang meninggalkan kesan pertama yang tak terlupakan.
+            </p>
+        
+            <div class="main-konten-block">
+              <div class="konten-block">
+                <img src="image/gambar_konten (1).png" alt="" class="konten_gambar">
+                <h2>Design. Code. Create.</h2>
+              </div>
+              <div class="konten-block">
+                <img src="image/gambar_konten (2).png" alt="" class="konten_gambar">
+                <h2>Build. Launch. Grow.</h2>
+              </div>
+              <div class="konten-block">
+                <img src="image/gambar_konten (3).png" alt="" class="konten_gambar">
+                <h2>Smart. Fast. Reliable.</h2>
+              </div>
             </div>
+          </div>
         </section>
-
         <section id="produk">
             <div class="main-produk-block">
               <div class="produk-container">
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
               </div>
                <div class="produk-container">
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
-                    <div class="blok">
+                    <div class="produk-block">
                         <img src="image/background_about (1).png" alt="">
                         <h2>Ovela Lumière</h2>
                     </div>
@@ -139,54 +145,59 @@
         </section>
         <section id="testimoni">
             <div class="testimoni-main-container">
-                <div class="testimoni-container">
-                    <div class="testimoni-gmb-left">
-                        <img src="image/background_about (1).png" alt="">
+                
+                    <div class="testimoni-container">
+                        <div class="testimoni-gmb-left">
+                            <img src="image/background_about (1).png" alt="">
+                        </div>
+                        <div class="testomni-paragraf">   
+                            <h1>.Amira P., Jakarta</h1>
+                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
+                        </div>
+                        <div class="testimoni-gmb-right">
+                            <img src="image/background_about (2).png" alt="">
+                        </div>
                     </div>
-                    <div class="testomni-paragraf">   
-                        <h1>.Amira P., Jakarta</h1>
-                        <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
+                     <div class="testimoni-container">
+                        <div class="testimoni-gmb-left">
+                            <img src="image/background_about (1).png" alt="">
+                        </div>
+                        <div class="testomni-paragraf">   
+                            <h1>.Amira P., Jakarta</h1>
+                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
+                        </div>
+                        <div class="testimoni-gmb-right">
+                            <img src="image/background_about (2).png" alt="">
+                        </div>
                     </div>
-                    <div class="testimoni-gmb-right">
-                        <img src="image/background_about (2).png" alt="">
+                
+              
+                    <div class="testimoni-container">
+                        <div class="testimoni-gmb-left">
+                            <img src="image/background_about (1).png" alt="">
+                        </div>
+                        <div class="testomni-paragraf">   
+                            <h1>.Amira P., Jakarta</h1>
+                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
+                        </div>
+                        <div class="testimoni-gmb-right">
+                            <img src="image/background_about (2).png" alt="">
+                        </div>
                     </div>
-                </div>
-                 <div class="testimoni-container">
-                    <div class="testimoni-gmb-left">
-                        <img src="image/background_about (1).png" alt="">
+                    <div class="testimoni-container">
+                        <div class="testimoni-gmb-left">
+                            <img src="image/background_about (1).png" alt="">
+                        </div>
+                        <div class="testomni-paragraf">   
+                            <h1>.Amira P., Jakarta</h1>
+                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
+                        </div>
+                        <div class="testimoni-gmb-right">
+                            <img src="image/background_about (2).png" alt="">
+                        </div>
                     </div>
-                    <div class="testomni-paragraf">   
-                        <h1>.Amira P., Jakarta</h1>
-                        <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                    </div>
-                    <div class="testimoni-gmb-right">
-                        <img src="image/background_about (2).png" alt="">
-                    </div>
-                </div>
-                 <div class="testimoni-container">
-                    <div class="testimoni-gmb-left">
-                        <img src="image/background_about (1).png" alt="">
-                    </div>
-                    <div class="testomni-paragraf">   
-                        <h1>.Amira P., Jakarta</h1>
-                        <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                    </div>
-                    <div class="testimoni-gmb-right">
-                        <img src="image/background_about (2).png" alt="">
-                    </div>
-                </div>
-                 <div class="testimoni-container">
-                    <div class="testimoni-gmb-left">
-                        <img src="image/background_about (1).png" alt="">
-                    </div>
-                    <div class="testomni-paragraf">   
-                        <h1>.Amira P., Jakarta</h1>
-                        <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                    </div>
-                    <div class="testimoni-gmb-right">
-                        <img src="image/background_about (2).png" alt="">
-                    </div>
-                </div>
+               
+                
             </div> 
             <div class="testimoni-second-container">
               <div class="auto-slider">
@@ -207,8 +218,14 @@
                       <img src="image/background_about (3).png" alt="">
                       <h2>Ovela Lumière</h2>
                 </div>
-                <div class="varian-blok"></div>
-                <div class="varian-blok"></div>
+                <div class="varian-blok">
+                    <img src="image/background_about (2).png" alt="">
+                    <h2>Ovela Lumière</h2>
+                </div>
+                <div class="varian-blok">
+                    <img src="image/background_about (4).png" alt="">
+                    <h2>Ovela Lumière</h2>
+                </div>
             </div>
         </section>
 
@@ -226,7 +243,73 @@
                 <div class="kualitas-blok"></div>
             </div>
         </section>
-        <section></section>
+        <section id="Visi-Misi">
+          <div class="visi-misi-container">
+            <h1 class="judul-besar">Visi & Misi Kami</h1>
+        
+            <div class="visi-misi-content">
+              <div class="blok visi">
+                <h2>Visi</h2>
+                <p>
+                  Menjadi penyedia layanan digital yang menghadirkan kesan elegan, fungsional, dan 
+                  bermakna di setiap karya — membantu setiap individu dan bisnis membangun identitas 
+                  yang kuat di dunia digital.
+                </p>
+              </div>
+          
+              <div class="blok misi">
+                <h2>Misi</h2>
+                <ul>
+                  <li>Mengutamakan kualitas dan ketepatan dalam setiap desain.</li>
+                  <li>Menciptakan pengalaman digital yang mudah, cepat, dan berkesan.</li>
+                  <li>Berinovasi mengikuti perkembangan teknologi tanpa kehilangan esensi keindahan.</li>
+                  <li>Mendukung pertumbuhan mitra menuju kesuksesan berkelanjutan.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="cta">
+          <div class="cta-container">
+            <h1 class="cta-title">Pesan Sekarang</h1>
+            <p class="cta-text">
+              Wujudkan website profesional impianmu hari ini. Desain elegan, performa cepat, dan harga terjangkau.
+            </p>
+            <a href="#kontak" class="cta-button">Hubungi Kami</a>
+          </div>
+        </section>
+       <section id="kontak">
+          <div class="kontak-container">
+            <h1 class="kontak-title">Hubungi Kami</h1>
+            <p class="kontak-text">
+              Jika Anda memiliki pertanyaan atau ingin berkolaborasi, jangan ragu untuk menghubungi kami.
+            </p>
+        
+            <form class="kontak-form">
+              <input type="text" placeholder="Nama Anda" required>
+              <input type="email" placeholder="Email Anda" required>
+              <textarea placeholder="Pesan Anda" required></textarea>
+              <button type="submit">Kirim Pesan</button>
+            </form>
+        
+            <div class="kontak-sosmed">
+              <p>atau hubungi kami melalui</p>
+              <div class="sosmed-icons">
+                <a href="#" class="icon ig" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="icon x" aria-label="Twitter / X">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="#" class="icon wa" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- Tambahkan ini di head HTML kamu -->
     </main>
 </body>
 <script src="script.js"></script>
