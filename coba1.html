@@ -6,56 +6,94 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="home">
-        <div class="home_content">
-            <div class="block">
-                <!-- <img src="image/gambar (1).png" class="about_gambar" alt=""> -->
-            </div>
-            <!-- <div class="block"></div>
-            <div class="block"></div> -->
-        </div>
-    </section>
+    <section class="products-section">
+  <h2 class="title">Our Products</h2>
+  <div class="products-container">
+    <div class="product-card">
+      <img src="image/gambar (1).png" alt="Men's Perfume">
+      <h3>Men's Perfume</h3>
+      <p>
+        Indulge in the timeless charm of our Men's Perfume Collection,
+        where strength meets sophistication.
+      </p>
+    </div>
+
+    <div class="product-card highlight">
+      <img src="image/gambar (1).png" alt="Women's Perfume">
+      <h3>Women's Perfume</h3>
+      <p>
+        Elevate your senses with our Women's Perfume Collection,
+        a celebration of femininity and grace.
+      </p>
+    </div>
+
+    <div class="product-card">
+      <img src="image/gambar (1).png" alt="Unisex Perfume">
+      <h3>Unisex Perfume</h3>
+      <p>
+        Discover the perfect harmony of scents in our Unisex Perfume Collection,
+        where boundaries dissolve.
+      </p>
+    </div>
+  </div>
+</section>
+
 </body>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    #home {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
+   .products-section {
+  background: linear-gradient(to bottom, #fff 50%, #000 50%); /* atas putih, bawah hitam */
+  position: relative;
+  padding: 60px 0;
+  text-align: center;
 }
 
-#home {
- 
+.title {
+  font-size: 48px;
+  color: #5b0b0b;
+  margin-bottom: 50px;
+  font-family: 'Georgia', serif;
+}
+
+.products-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
 }
 
-.home_content {
-  background-color: aliceblue;
-  width: 50%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.product-card {
+  background: #fff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2; /* supaya muncul di atas background */
 }
 
-    .block{
+.product-card.highlight {
+  background: #4a0b0b; /* warna gelap seperti contoh tengah */
+  color: #fff;
+}
 
-        width: 25%;
-        height: 100%;
-        background-color: #8a2020;
-       
+.product-card img {
+  width: 100px;
+  margin-top: -80px; /* supaya botol parfum melayang di atas card */
+}
 
-    }
-    .about_gambar{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.products-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-image: url('image/black.png'); /* gambar hitam di belakang */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
 </style>
 </html>

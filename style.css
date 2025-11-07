@@ -10,40 +10,55 @@
 html{
     scroll-behavior: smooth;
 }
-/* ====== Navbar utama ====== */
+/* ====== Navbar Utama ====== */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: 60px;
-  background: rgba(20, 20, 20, 0.9);
-  backdrop-filter: blur(10px);
+  height: 70px;
+  background: rgba(30, 30, 30, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 35px;
   z-index: 1000;
+  transition: all 0.4s ease;
 }
 
 /* ====== Logo ====== */
 .logo {
-  font-family: "Orbitron", sans-serif;
-  color: #f0f0f0;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+ 
+  font-family: "Playfair Display", serif;
+  color: #f5f5f5;
+  font-size: 1.7rem;
   font-weight: 600;
-}
-.logo img{
-    width: 40px;
-    height: 40px;
-
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-/* ====== Link navbar ====== */
+.logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  transition: transform 0.3s ease;
+  margin-left: -5vh;
+  margin-top: 1vh;
+}
+
+.logo:hover img {
+  transform: scale(2);
+}
+
+/* ====== Navigasi Link ====== */
 .nav-links {
   list-style: none;
   display: flex;
@@ -52,28 +67,51 @@ html{
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
-  font-family: "Momo Trust Display", sans-serif;
-  font-size: clamp(12px, 1.5vw, 20px);
-  transition: color 0.3s ease;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: clamp(13px, 1.5vw, 18px);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #b5b81e, #e8c27c);
+  border-radius: 2px;
+  transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #b5b81e;
+  color: #e8c27c;
 }
 
-/* ====== Tombol hamburger (mobile) ====== */
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ====== Tombol Menu (Mobile) ====== */
 .menu-toggle {
   background: none;
   border: none;
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
-  display: none; /* defaultnya disembunyikan di desktop */
+  display: none;
+  transition: transform 0.3s ease;
 }
 
+.menu-toggle:hover {
+  transform: scale(1.2);
+}
 
-/* ====== Responsif untuk HP ====== */
+/* ====== Responsif Mobile ====== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -81,38 +119,45 @@ html{
 
   .nav-links {
     position: absolute;
-    top: 70px;
+    top: 85px;
     right: 0;
-    background: rgba(20, 20, 20, 0.95);
+    background: rgba(25, 25, 25, 0.97);
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
     padding: 25px 0;
     border-radius: 0 0 20px 20px;
-    display: none; /* disembunyikan dulu */
+    display: none;
+    animation: fadeIn 0.3s ease;
   }
 
   .nav-links.show {
-    display: flex; /* muncul saat tombol ditekan */
-    animation: fadeIn 0.3s ease;
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
   }
 
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-15px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-
-  .nav-links li a {
-    font-size: 18px;
-  }
 }
+
+/* ====== Scroll Effect (Optional) ====== */
+.navbar.scrolled {
+  background: rgba(20, 20, 20, 0.9);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
 
 #home { 
   height: 100vh;
@@ -309,6 +354,7 @@ html{
 
 
 #konten {
+  position: relative; /* penting untuk pseudo-element */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -316,7 +362,35 @@ html{
   align-items: center;
   background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
   padding: 80px 0;
+  overflow: hidden; /* supaya after-nya tidak keluar area */
+  z-index: 0;
 }
+
+/* background hitam di belakang */
+#konten::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* efek hitam hanya setengah bawah */
+  background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.959) 20%, rgba(255, 255, 255, 0.116) 100%), 
+    url('image/black.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: none; /* supaya tidak ganggu interaksi mouse */
+}
+
+
+/* supaya konten muncul di atas background */
+.konten-teks {
+  position: relative;
+  z-index: 2;
+}
+
 
 .konten-teks h2 {
   font-family: 'Playfair Display', serif;
@@ -403,6 +477,17 @@ hr {
 .konten-block:hover h2 {
   opacity: 1;
 }
+.image-wrapper{
+ height: 10%;
+ width: 10%;
+ background-color: #994e4e;
+ 
+  
+}
+.image-wrapper img{
+  object-fit: cover;
+}
+
 
 /* RESPONSIF UNTUK HP */
 @media (max-width: 768px) {
@@ -712,7 +797,7 @@ hr {
 
 
 
-#varian {
+#recomend {
   background: radial-gradient(circle at top, #0b0b0b 0%, #000 90%);
   min-height: 100vh;
   padding: 80px 5%;
@@ -806,7 +891,7 @@ hr {
 }
 
 /* Overlay teks */
-.overlay {
+.varian-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -819,20 +904,20 @@ hr {
   transition: all 0.6s ease;
 }
 
-.varian-blok:hover .overlay {
+.varian-blok:hover .varian-overlay {
   opacity: 1;
   transform: translateY(0);
 }
 
-.overlay h2 {
+.varian-overlay h2 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.6rem;
   margin-bottom: 10px;
-  color: #05eeff;
+  color: #e8c27c;
   letter-spacing: 2px;
 }
 
-.overlay p {
+.varian-overlay p {
   font-size: 0.95rem;
   color: #dcdcdc;
   line-height: 1.6;
@@ -864,11 +949,11 @@ hr {
     height: 320px;
   }
 
-  .overlay {
+  .varian-overlay {
     padding: 25px 20px;
   }
 
-  .overlay h2 {
+  .varian-overlay h2 {
     font-size: 1.3rem;
   }
 }
@@ -905,7 +990,7 @@ hr {
   display: block;
   width: 90px;
   height: 3px;
-  background: linear-gradient(90deg, #05eeff, #ffffff);
+  background: linear-gradient(90deg, #b5b81e, #e8c27c);
   margin: 12px auto 0;
   border-radius: 2px;
 }
@@ -927,6 +1012,7 @@ hr {
 
 /* Tiap blok kualitas */
 .kualitas-blok {
+  height: 40vh;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
@@ -950,7 +1036,7 @@ hr {
 }
 
 /* Overlay teks */
-.overlay {
+.kualitas-overlay {
   position: absolute;
   inset: 0;
   display: flex;
@@ -963,20 +1049,22 @@ hr {
   transition: opacity 0.5s ease;
 }
 
-.kualitas-blok:hover .overlay {
+.kualitas-blok:hover .kualitas-overlay {
   opacity: 1;
 }
 
-.overlay h2 {
+.kualitas-overlay h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color:  #e8c27c;
 }
 
-.overlay p {
+.kualitas-overlay p {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #d6d6d6;
+  /* margin-bottom: 15px; */
 }
 
 /* Responsif */
@@ -984,10 +1072,10 @@ hr {
   #kualitas {
     padding: 60px 20px;
   }
-  .overlay h2 {
+  .kualitas-overlay h2 {
     font-size: 1.2rem;
   }
-  .overlay p {
+  .kualitas-overlay p {
     font-size: 0.9rem;
   }
 }

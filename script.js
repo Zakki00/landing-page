@@ -1,9 +1,21 @@
- const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+  const navbar = document.querySelector(".navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
   });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+
 
 const dataKonten = [
   {
