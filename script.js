@@ -7,7 +7,8 @@ const slides = document.querySelectorAll('.parfum-slideshow img');
     slides[index].classList.add('active');
   }, 4000); // Ganti gambar tiap 4 detik
 
-const menuToggle = document.querySelector('.menu-toggle');
+
+  const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links a');
 
@@ -15,12 +16,11 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
 
   if (!navLinks.classList.contains('show')) {
-    // 🌟 Delay buka agar garis emas tampil dulu
+    // Delay biar garis emas muncul dulu
     setTimeout(() => {
       navLinks.classList.add('show');
     }, 400);
   } else {
-    // 🌙 Tutup menu halus
     navLinks.classList.remove('show');
   }
 });
