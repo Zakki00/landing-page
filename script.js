@@ -1,53 +1,60 @@
+const slides = document.querySelectorAll('.parfum-slideshow img');
+  let index = 0;
 
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
-  const navbar = document.querySelector(".navbar");
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 4000); // Ganti gambar tiap 4 detik
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links a');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+
+  if (!navLinks.classList.contains('show')) {
+    // 🌟 Delay buka agar garis emas tampil dulu
+    setTimeout(() => {
+      navLinks.classList.add('show');
+    }, 400);
+  } else {
+    // 🌙 Tutup menu halus
+    navLinks.classList.remove('show');
+  }
+});
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    menuToggle.classList.remove('active');
   });
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
+});
 
 
 
 const dataKonten = [
   {
-    judul: "Design. Code. Create.",
-    deskripsi: `Bangun kehadiran digital yang benar-benar mencerminkan kualitas 
-                bisnismu. Di sini, kami membantu mewujudkan website profesional yang 
-                tidak hanya menarik secara visual, tetapi juga cepat, responsif, dan 
-                dirancang untuk tumbuh bersama bisnismu. Kami percaya setiap detail 
-                punya makna dari warna yang menegaskan identitas, hingga pengalaman 
-                pengguna yang meninggalkan kesan pertama yang tak terlupakan. Saat 
-                dunia bergerak ke arah digital, biarkan websitemu menjadi langkah 
-                pasti menuju masa depan.`
+    judul: "Curated Essenc.",
+    deskripsi: `Setiap aroma Ovela lahir dari pilihan bahan terbaik yang diracik dengan presisi tinggi.
+                Kami percaya bahwa keharuman sejati bukan sekadar wangi, melainkan cerminan karakter dan emosi.
+                Setiap detail dari keseimbangan nada atas hingga dasardisusun untuk menghadirkan harmoni yang menenangkan.
+                Inilah seni meramu parfum yang tak hanya memikat, tetapi juga meninggalkan kesan mendalam pada setiap momen.`
   },
   {
-    judul: "Build. Launch. Grow.",
-    deskripsi: `Mulailah langkah besar dalam membangun identitas digital yang kuat dan berkelanjutan. 
-                Kami menghadirkan layanan pembuatan website yang dirancang untuk mempercepat pertumbuhan 
-                bisnismu, mulai dari konsep hingga peluncuran. Setiap elemen dikembangkan dengan fokus 
-                pada keindahan visual, kecepatan, dan strategi yang mendukung peningkatan pelanggan. 
-                Dengan pendekatan yang terencana, kami memastikan setiap halaman bekerja selaras untuk 
-                menyampaikan nilai dan karakter unik bisnismu. Saat ide tumbuh menjadi hasil nyata, 
-                biarkan website-mu menjadi jembatan antara visi dan kesuksesan digitalmu.`
+    judul: "Crafted with Passion.",
+    deskripsi: `Kami menyalurkan dedikasi dan cinta dalam setiap proses penciptaan parfum Ovela.
+                Mulai dari desain botol yang menawan hingga aroma yang melebur lembut di kulit, semuanya penuh makna.
+                Tak ada yang diciptakan secara kebetulan; setiap komposisi lahir dari intuisi dan kepekaan terhadap keindahan.
+                Bagi kami, parfum adalah bahasa tanpa kata cara elegan untuk mengekspresikan diri dengan percaya diri.`
   },
   {
-    judul: "Smart. Fast. Reliable.",
-    deskripsi: `Kami menciptakan website yang tidak hanya terlihat cerdas, tetapi juga bekerja dengan 
-                kecepatan dan keandalan tinggi. Setiap desain kami optimalkan agar tetap ringan, responsif, 
-                dan nyaman diakses dari perangkat apa pun. Dengan teknologi terbaru, websitemu mampu 
-                menangani kebutuhan bisnis tanpa mengorbankan performa atau tampilan. Kami percaya 
-                bahwa kecepatan dan stabilitas adalah fondasi utama untuk pengalaman pengguna yang 
-                memuaskan. Saat dunia digital menuntut efisiensi, biarkan websitemu menjadi representasi 
-                terbaik dari profesionalisme dan keunggulan merekmu.`
+    judul: "Timeless Impression.",
+    deskripsi: `Parfum Ovela dirancang untuk melampaui waktu dan tren yang silih berganti.
+                Kami menghadirkan keharuman yang tak hanya indah saat ini, tapi juga abadi dalam ingatan.
+                Setiap semerbaknya mengisahkan elegansi, meninggalkan jejak lembut di setiap langkah dan pertemuan.
+                Karena keanggunan sejati bukan hanya terlihatia terasa, dan dikenang dalam wangi yang tak pernah pudar.`
   }
 ];
 
