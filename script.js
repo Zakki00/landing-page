@@ -8,18 +8,19 @@ const slides = document.querySelectorAll('.parfum-slideshow img');
   }, 4000); // Ganti gambar tiap 4 detik
 
 
-  const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links a');
-
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
 
   if (!navLinks.classList.contains('show')) {
-    // Delay biar garis emas muncul dulu
-    setTimeout(() => {
-      navLinks.classList.add('show');
-    }, 400);
+    // Pastikan kondisi awal ter-render dulu
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        navLinks.classList.add('show');
+      }, 400); // kasih jeda sedikit biar smooth
+    });
   } else {
     navLinks.classList.remove('show');
   }
@@ -27,12 +28,16 @@ menuToggle.addEventListener('click', () => {
 
 links.forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('show');
-    menuToggle.classList.remove('active');
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        navLinks.classList.remove('show');
+        menuToggle.classList.remove('active');
+      } ,600);
+      
+    })
+   
   });
 });
-
-
 
 const dataKonten = [
   {
