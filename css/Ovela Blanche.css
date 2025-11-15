@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ovela Lumière</title>
-</head>
-<body>
-  <div class="content">
-    <div class="container1">
-      <div class="judul">
-        <h1>Ovela Lumière</h1>
-        <p class="tagline">Keanggunan yang bertahan lebih lama dari waktu.</p>
-        <p class="deskripsi">
-          Terinspirasi dari harmoni antara cahaya dan ketenangan, Ovela Lumière menghadirkan aroma
-          lembut bunga melati, sentuhan kayu cendana, dan lapisan musk halus yang menenangkan.
-          Parfum ini dirancang untuk mereka yang menghargai kesederhanaan, tapi tetap memancarkan pesona.
-        </p>
-        <div class="harga">
-          <span class="label">Harga:</span>
-          <span class="nominal">Rp 1.250.000</span>
-        </div>
-        <a href="#" class="btn-beli">Pesan Sekarang</a>
-      </div>
-    </div>
-
-    <div class="container2">
-      <div class="gmb-parfum">
-        <img src="../image/ovela no background.png" alt="Ovela Parfum" />
-      </div>
-      <div class="altar">
-        <img src="../image/altar.png" alt="Altar podium" />
-      </div>
-    </div>
-  </div>
-</body>
-
-<style>
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +31,7 @@ body {
   height: 80vh;
   margin-left: 10vh;
   border-radius: 60px;
-  background-image: url(../image/white3.png);
+  background-image: url(../image/bunga\ \(3\).png);
 
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 25px 60px rgba(0,0,0,0.25);
@@ -343,5 +305,3 @@ body {
     height: 180px;
   }
 }
-</style>
-</html>

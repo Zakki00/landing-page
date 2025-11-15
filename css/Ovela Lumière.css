@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%),
+    url('../image/white2.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================================
+   SECTION DESKRIPSI
+====================================== */
+.container1 {
+  width: 100%;
+  height: 80vh;
+  margin-left: 10vh;
+  border-radius: 60px;
+  background-image: url(../image/white3.png);
+
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* pantulan cahaya atas — lembut dan luxury */
+.container1::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -15%;
+  width: 420px;
+  height: 420px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 136, 0, 0.452) 0%,
+    rgba(253, 164, 0, 0.651) 40%,
+    transparent 70%
+  );
+
+  filter: blur(60px);
+  animation: glow 7s ease-in-out infinite alternate;
+}
+
+/* pantulan cahaya bawah — lebih lembut dari before */
+.container1::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 220, 200, 0.30) 0%,
+    rgba(255, 170, 150, 0.15) 40%,
+    transparent 70%
+  );
+
+  filter: blur(100px);
+  animation: glow 10s ease-in-out infinite alternate-reverse;
+}
+
+/* animasi halus seperti napas cahaya */
+@keyframes glow {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+
+@keyframes glow {
+  0% { opacity: 0.4; transform: scale(1);}
+  100% { opacity: 0.8; transform: scale(1.1);}
+}
+
+.judul {
+  max-width: 620px;
+  z-index: 2;
+  position: relative;
+}
+
+.judul h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+   font-family: "Playfair Display", serif;
+  color: #000000;
+  text-shadow: 0 0 20px rgba(255, 180, 150, 0.3);
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.deskripsi {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 35px;
+}
+
+.harga {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.harga .label {
+  color: #5f5855;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.harga .nominal {
+  font-weight: 600;
+  color: #464646;
+  letter-spacing: 1px;
+}
+
+.btn-beli {
+  display: inline-block;
+  background: linear-gradient(90deg, #f5e7e0, #f9d9c3);
+  color: #702424;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 220, 190, 0.2);
+}
+
+.btn-beli:hover {
+  background: linear-gradient(90deg, #ffffff, #f5e7e0);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(255, 220, 200, 0.3);
+}
+
+/* ======================================
+   SECTION GAMBAR PARFUM
+====================================== */
+.container2 {
+  width: 100%;
+  height: 100vh;
+  
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* pantulan lembut seperti cahaya spotlight */
+.container2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60%;
+ 
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.gmb-parfum img {
+  position: relative;
+  z-index: 3;
+  top: 100px;
+  width: 500px;
+  height: auto;
+  right: 50px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+  animation: float 3s ease-in-out infinite;
+}
+.gmb-parfum img {
+  transition: 
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1s ease,
+    opacity 0.9s ease;
+  transform-origin: center;
+}
+
+/* Hover super halus dan elegan */
+.gmb-parfum img:hover {
+  transform: translateY(-12px) rotate(-2deg) scale(1.04);
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.35));
+  opacity: 0.97;
+}
+
+/* Cahaya lembut yang muncul perlahan */
+.gmb-parfum img:hover {
+  animation: smooth-glow 1.6s ease forwards;
+}
+
+/* Pantulan cahaya yang sangat lembut */
+@keyframes smooth-glow {
+  0% {
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+  }
+  100% {
+    filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.35));
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-10px) rotate(-5deg); }
+}
+
+.altar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.altar img {
+  position: relative;
+  z-index: 2;
+  top: 1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+   
+  }
+
+  .judul {
+    max-width: 90%;
+  }
+
+  .judul h1 {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .deskripsi {
+    font-size: 0.95rem;
+  }
+
+  .container2 {
+    height: auto;
+    padding: 30px 0 80px;
+    overflow: hidden;
+}
+
+  .gmb-parfum img {
+    width: 240px;
+    height: auto;
+    right: 0;
+    top: 0;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
+  }
+
+  .altar {
+    height: 180px;
+  }
+}
