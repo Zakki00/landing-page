@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovela Lumière Display</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 80px;
+      background: #2a2a2a;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content1 {
+      width: 100%;
+      height: 50vh;
+      background: #f0f0f0;
+    }
+
+    .content2 {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(to bottom, #dcdcdc 50%, #555 50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* latar abu miring */
+    .content2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70%;
+      height: 100%;
+      background: #bfbfbf;
+      transform: skewX(-250deg);
+      transform-origin: top right;
+      z-index: 1;
+    }
+
+    .gmb-parfum img {
+      position: relative;
+      z-index: 3;
+      width: 300px;
+      top: 90px;
+      right: 25px;
+      transform: rotate(-5deg);
+      filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(-5deg);
+      }
+    }
+
+    .altar {
+      position: absolute;
+      bottom: 80px;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+      height: auto;
+    }
+
+    .altar img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    }
+
+    /* teks nama parfum */
+    .judul {
+      position: absolute;
+      top: 15%;
+      text-align: center;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #2a2a2a;
+      font-weight: 600;
+      z-index: 4;
+    }
+
+    @media (max-width: 768px) {
+      .gmb-parfum img {
+        width: 180px;
+      }
+      .altar {
+        width: 250px;
+      }
+      .judul {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="content1"></div>
+
+    <div class="content2">
+      <div class="judul">Ovela Lumière</div>
+
+      <div class="gmb-parfum">
+        <img src="../image/ovela no background.png" alt="Ovela Parfum">
+      </div>
+
+      <div class="altar">
+        <img src="../image/altar.png" alt="Altar podium">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
