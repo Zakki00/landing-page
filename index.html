@@ -1,390 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <title>Ovela</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Ovela</title>
 </head>
+
 <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="image/ovela1.png" alt="Ovela Logo">
-          <span>Ovela</span>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/ovela1.png" alt="Ovela Logo">
+        <span data-aos="fade-down" data-aos-delay="1200">Ovela</span>
+      </div>
+
+      <button class=" menu-toggle" id="menu-toggle">☰</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-aos="fade-up" data-aos-delay="100">Home</a></li>
+        <li><a href="#about" data-aos="fade-up" data-aos-delay="200">About</a></li>
+        <li><a href="#konten" data-aos="fade-up" data-aos-delay="300">Konten</a></li>
+        <li><a href="#produk" data-aos="fade-up" data-aos-delay="400">Produk</a></li>
+        <li><a href="#testimoni" data-aos="fade-up" data-aos-delay="500">Testimoni</a></li>
+        <li><a href="#keunggulan" data-aos="fade-up" data-aos-delay="600">keunggulan</a></li>
+        <li><a href="#recomend" data-aos="fade-up" data-aos-delay="700">Recomend</a></li>
+        <li><a href="#kualitas" data-aos="fade-up" data-aos-delay="800">Kualitas</a></li>
+        <li><a href="#Visi-Misi" data-aos="fade-up" data-aos-delay="900">Visi-Misi</a></li>
+        <li><a href="#cta" data-aos="fade-up" data-aos-delay="1000">Cta</a></li>
+        <li><a href="#kontak" data-aos="fade-up" data-aos-delay="1100">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" data-aos="zoom-out" data-aos-delay="400">
+      <div class="home-content-left" data-aos="fade-right" data-aos-delay="600">
+        <div class="home-content">
+          <div class="home_judul" data-aos="zoom-in" data-aos-delay="1000">
+
+            <h1>Ovela</h1>
+            <p>Elegance in Every Scent<br> parfum yang merayakan momen-momen halus dalam hidup dengan komposisi wangi
+              yang hangat, tahan lama, dan selalu terasa mewah.</p>
+          </div>
+          <div class="promo-video">
+            <video autoplay muted loop playsinline>
+              <source src="video/marketing2.mp4" type="video/mp4">
+              Browser kamu tidak mendukung video tag.
+            </video>
+          </div>
         </div>
-      
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-      
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#konten">Konten</a></li>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#keunggulan">keunggulan</a></li>
-          <li><a href="#recomend">Recomend</a></li>
-          <li><a href="#kualitas">Kualitas</a></li>
-          <li><a href="#Visi-Misi">Visi-Misi</a></li>
-          <li><a href="#cta">Cta</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <section id="home">
-           <div class="home-content-left">
-              <div class="home-content">
-                <div class="home_judul">
-                    <h1>Ovela</h1>
-                    <p>Elegance in Every Scent<br> parfum yang merayakan momen-momen halus dalam hidup dengan komposisi wangi yang hangat, tahan lama, dan selalu terasa mewah.</p>
-                </div>
-                 <div class="promo-video">
-                  <video autoplay muted loop playsinline>
-                    <source src="video/marketing2.mp4" type="video/mp4">
-                    Browser kamu tidak mendukung video tag.
-                  </video>
-                </div>
-            </div>   
-           </div>
-          <div class="home-content-right">
-            <div class="parfum-slideshow">
-              <img src="image/ovela no background.png" class="active" alt="Parfum 1">
-              <img src="image/ovela no background2.png" alt="Parfum 2">
-              <img src="image/ovela no background3.png" alt="Parfum 3">
+      </div>
+      <div class="home-content-right" data-aos="fade-left" data-aos-delay="600">
+        <div class="parfum-slideshow">
+          <img src="image/ovela no background.png" class="active" alt="Parfum 1">
+          <img src="image/ovela no background2.png" alt="Parfum 2">
+          <img src="image/ovela no background3.png" alt="Parfum 3">
+        </div>
+      </div>
+
+    </section>
+    <section id="about">
+      <div class="about_block">
+        <div class="about_inner" data-aos="fade-up" data-aos-delay="600">
+          <img src="image/ovela about (1).png" class="about_gambar" alt="">
+          <h2>Rasakan Keanggunan Setiap Aroma</h2>
+          <!-- <p>Website profesional yang menampilkan kualitas bisnismu dengan kesan pertama yang kuat</p> -->
+        </div>
+      </div>
+      <div class="about_block">
+        <div class="about_inner" data-aos="fade-down" data-aos-delay="800">
+          <img src="image/ovela about (2).png" class="about_gambar" alt="">
+          <h2>Wangi Lembut yang Berbicara</h2>
+          <!-- <p>Tampilan elegan yang membuat pelanggan percaya sejak pandangan pertama.</p> -->
+        </div>
+      </div>
+      <div class="about_block">
+        <div class="about_inner" data-aos="fade-up" data-aos-delay="1000">
+          <img src="image/ovela about (3).png" class="about_gambar" alt="">
+          <h2>Pesona Harum Tanpa Batas</h2>
+          <!-- <p>Jangkau lebih banyak pembeli dengan sistem online yang siap 24 jam.</p> -->
+        </div>
+      </div>
+      <div class="about_block">
+        <div class="about_inner" data-aos="fade-down" data-aos-delay="1200">
+          <img src="image/ovela about (4).png" class="about_gambar" alt="">
+          <h2>Esensi Wangi yang Abadi</h2>
+          <!-- <p>Kami hadir untuk mewujudkan website yang bekerja secerdas idemu.</p> -->
+        </div>
+      </div>
+    </section>
+    <section id="konten">
+      <div class="konten-teks">
+        <h2 id="judul_utama" data-aos="fade-up" data-aos-delay="400">Curated Essence</h2>
+        <hr>
+        <p id="paragraf_utama" data-aos="fade-up" data-aos-delay="600">
+          Setiap aroma Ovela lahir dari pilihan bahan terbaik yang diracik dengan presisi tinggi.
+          Kami percaya bahwa keharuman sejati bukan sekadar wangi, melainkan cerminan karakter dan emosi.
+          Setiap detail dari keseimbangan nada atas hingga dasardisusun untuk menghadirkan harmoni yang menenangkan.
+          Inilah seni meramu parfum yang tak hanya memikat, tetapi juga meninggalkan kesan mendalam pada setiap momen.
+        </p>
+
+        <div class="main-konten-block" data-aos="fade-down" data-aos-delay="800">
+          <div class="konten-block">
+            <img src="image/parfum ovela (1).png" alt="" class="konten_gambar">
+            <h2>Curated Essence</h2>
+          </div>
+          <div class="konten-block" data-aos="fade-down" data-aos-delay="1000">
+            <img src="image/parfum ovela (4).png" alt="" class="konten_gambar">
+            <h2>Crafted with Passion</h2>
+          </div>
+          <div class="konten-block" data-aos="fade-down" data-aos-delay="1200">
+            <img src="image/parfum ovela (5).png" alt="" class="konten_gambar">
+            <h2>Timeless Impression</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="produk">
+      <div class="varian-tag-line">
+        <h1 data-aos="fade-up" data-aos-delay="400">Our Product</h1>
+        <p data-aos="fade-down" data-aos-delay="600">Temukan aroma terbaik dari Ovela yang mencerminkan keanggunan,
+          karakter, dan kepercayaan diri.</p>
+      </div>
+      <div class="main-produk-block">
+        <div class="produk-container">
+          <div class="produk-block" data-aos="fade-down" data-aos-delay="700">
+            <img src="image/Lumière.png" alt="">
+            <h2>Ovela Lumière</h2>
+            <a href="our_product/Ovela Lumière.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-down" data-aos-delay="900">
+            <img src="image/BLANCHE.png" alt="">
+            <h2>Ovela Blanche</h2>
+            <a href="our_product/Ovela Blanche.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-down" data-aos-delay="1100">
+            <img src="image/SILHOUETTE.png" alt="">
+            <h2>Ovela Silhouette</h2>
+            <a href="our_product/Ovela Silhouette.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-down" data-aos-delay="1300">
+            <img src="image/Pure Essence.png" alt="">
+            <h2>Ovela Pure Essence </h2>
+            <a href="our_product/Ovela Pure Essence.html" class="button-produk">Read More</a>
+          </div>
+        </div>
+        <div class="produk-container">
+          <div class="produk-block" data-aos="fade-up" data-aos-delay="800">
+            <img src="image/EMBER.png" alt="">
+            <h2>Ovela Ember</h2>
+            <a href="our_product/Ovela Ember.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-up" data-aos-delay="1000">
+            <img src="image/AMOURÉ.png" alt="">
+            <h2>Ovela Amouré</h2>
+            <a href="our_product/Ovela Amouré.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-up" data-aos-delay="1200">
+            <img src="image/Fleur de Vie (2).png" alt="">
+            <h2>Ovela Fleur de Vie</h2>
+            <a href="our_product/Ovela Fleur de Vie.html" class="button-produk">Read More</a>
+          </div>
+          <div class="produk-block" data-aos="fade-up" data-aos-delay="1400">
+            <img src="image/OBSIDIAN.png" alt="">
+            <h2>Ovela Obsidian</h2>
+            <a href="our_product/Ovela Obsidian.html" class="button-produk">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimoni">
+      <div class="testimoni-main-container">
+        <div class="testimoni-wrapper" data-aos="fade-right" data-aos-delay="400">
+          <div class="testimoni-container">
+            <div class="testimoni-gmb-left">
+              <img src="image/parfum ovela (7).png" alt="">
+            </div>
+            <div class="testomni-paragraf">
+              <h1 data-aos="zoom-out" data-aos-delay="600">.Amira P., Jakarta</h1>
+              <p data-aos="zoom-in" data-aos-delay="800">“Setiap semprotan Ovalen selalu membawa aku ke momen yang
+                tenang dan berkelas. Wanginya lembut tapi
+                tahan
+                lama, benar-benar seperti identitasku sendiri</p>
             </div>
           </div>
-            
-        </section>
-        <section id="about">
-                <div class="about_block">
-                    <img src="image/ovela about (1).png" class="about_gambar" alt="">
-                    <h2>Rasakan Keanggunan Setiap Aroma</h2>
-                    <!-- <p>Website profesional yang menampilkan kualitas bisnismu dengan kesan pertama yang kuat</p> -->
-                </div>
-                <div class="about_block">
-                    <img src="image/ovela about (2).png" class="about_gambar" alt="">
-                    <h2>Wangi Lembut yang Berbicara</h2>
-                    <!-- <p>Tampilan elegan yang membuat pelanggan percaya sejak pandangan pertama.</p> -->
-                </div>
-                <div class="about_block">
-                    <img src="image/ovela about (3).png" class="about_gambar" alt="">
-                    <h2>Pesona Harum Tanpa Batas</h2>
-                    <!-- <p>Jangkau lebih banyak pembeli dengan sistem online yang siap 24 jam.</p> -->
-                </div>
-                <div class="about_block">
-                    <img src="image/ovela about (4).png" class="about_gambar" alt=""> 
-                    <h2>Esensi Wangi yang Abadi</h2>
-                    <!-- <p>Kami hadir untuk mewujudkan website yang bekerja secerdas idemu.</p> -->
-                </div>
-        </section>
-        <section id="konten">
-          <div class="konten-teks">
-            <h2 id="judul_utama">Curated Essence</h2>
-            <hr>
-            <p id="paragraf_utama">
-            Setiap aroma Ovela lahir dari pilihan bahan terbaik yang diracik dengan presisi tinggi.
-            Kami percaya bahwa keharuman sejati bukan sekadar wangi, melainkan cerminan karakter dan emosi.
-            Setiap detail dari keseimbangan nada atas hingga dasardisusun untuk menghadirkan harmoni yang menenangkan.
-            Inilah seni meramu parfum yang tak hanya memikat, tetapi juga meninggalkan kesan mendalam pada setiap momen.
+        </div>
+
+        <div class="testimoni-wrapper" data-aos="fade-right" data-aos-delay="600">
+          <div class="testimoni-container">
+            <div class="testimoni-gmb-left">
+              <img src="image/parfum ovela.png" alt="">
+            </div>
+            <div class="testomni-paragraf">
+              <h1 data-aos="zoom-out" data-aos-delay="800">Randi S., Bandung</h1>
+              <p data-aos="zoom-in" data-aos-delay="1000">“Ovela langsung jadi parfum andalan saya. Aromanya tidak
+                berisik, tapi tetap meninggalkan kesan kuat
+                setiap kali saya lewat. Rasanya seperti upgrade versi diri sendiri.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimoni-wrapper" data-aos="fade-right" data-aos-delay="800">
+          <div class="testimoni-container">
+            <div class="testimoni-gmb-left">
+              <img src="image/parfum ovela (5).png" alt="">
+            </div>
+            <div class="testomni-paragraf">
+              <h1 data-aos="zoom-out" data-aos-delay="1000">Clarissa M., Surabaya</h1>
+              <p data-aos="zoom-in" data-aos-delay="1200">“Aku suka bagaimana Ovela terasa halus di awal lalu perlahan
+                menghangat. Aromanya membuat aku lebih
+                percaya diri tanpa harus berusaha keras.”</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimoni-wrapper" data-aos="fade-right" data-aos-delay="1000">
+          <div class="testimoni-container">
+            <div class="testimoni-gmb-left">
+              <img src="image/parfum ovela (6).png" alt="">
+            </div>
+            <div class="testomni-paragraf">
+              <h1 data-aos="zoom-out" data-aos-delay="1200">Dimas A., Yogyakarta</h1>
+              <p data-aos="zoom-in" data-aos-delay="1400">“Yang paling saya suka dari Ovela adalah karakternya yang
+                konsisten dari pagi sampai malam. Wangi
+                elegan
+                yang nggak berlebihan, tapi tetap memikat orang sekitar.”</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testimoni-second-container" data-aos="fade-left" data-aos-delay="1200">
+        <div class="auto-slider">
+          <div class="auto-slides">
+            <img src="image/parfum ovela (1).png" class="auto-slide active">
+            <img src="image/parfum ovela (4).png" class="auto-slide">
+            <img src="image/parfum ovela (5).png" class="auto-slide">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="keunggulan">
+      <div class="keunggulan-container">
+        <h1 class="keunggulan-title" data-aos="fade-up" data-aos-delay="400">Keunggulan Produk Kami</h1>
+        <p class="keunggulan-text" data-aos="fade-down" data-aos-delay="600">
+          Setiap botol parfum Ovela dirancang bukan sekadar untuk mengharumkan,
+          tetapi untuk meninggalkan kesan yang melekat. Kami percaya bahwa aroma
+          yang tepat dapat menjadi simbol keanggunan dan kepribadian yang tak tergantikan.
+        </p>
+
+        <div class="keunggulan-grid">
+          <div class="keunggulan-item" data-aos="fade-up" data-aos-delay="1000">
+            <img src="image/ovela no background.png" alt="Aroma Tahan Lama" class="keunggulan-icon" data-aos="fade-down"
+              data-aos-delay="1100">
+            <h3 data-aos="fade-up" data-aos-delay="1100">Aroma Tahan Lama</h3>
+            <p data-aos="fade-up" data-aos-delay="1100">
+              Menggunakan bahan berkualitas tinggi dengan konsentrasi parfum yang
+              membuat wanginya bertahan seharian tanpa memudar.
             </p>
-        
-            <div class="main-konten-block">
-              <div class="konten-block">
-                <img src="image/parfum ovela (1).png" alt="" class="konten_gambar">
-                <h2>Curated Essence</h2>
-              </div>
-              <div class="konten-block">
-                <img src="image/parfum ovela (4).png" alt="" class="konten_gambar">
-                <h2>Crafted with Passion</h2>
-              </div>
-              <div class="konten-block">
-                <img src="image/parfum ovela (5).png" alt="" class="konten_gambar">
-                <h2>Timeless Impression</h2>
-              </div>
-            </div>
           </div>
-        </section>
-        <section id="produk">
-          <div class="varian-tag-line">
-            <h1>Our Product</h1>
-            <p>Temukan aroma terbaik dari Ovela yang mencerminkan keanggunan, karakter, dan kepercayaan diri.</p>
-          </div>
-            <div class="main-produk-block">
-              <div class="produk-container">
-                    <div class="produk-block">
-                        <img src="image/Lumière.png" alt="">
-                        <h2>Ovela Lumière</h2>
-                        <a href="our_product/Ovela Lumière.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/BLANCHE.png" alt="">
-                        <h2>Ovela Blanche</h2>
-                        <a href="our_product/Ovela Blanche.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/SILHOUETTE.png" alt="">
-                        <h2>Ovela Silhouette</h2>
-                        <a href="our_product/Ovela Silhouette.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/Pure Essence.png" alt="">
-                        <h2>Ovela Pure Essence </h2>
-                        <a href="our_product/Ovela Pure Essence.html" class="button-produk">Read More</a>
-                    </div>
-              </div>
-               <div class="produk-container">
-                    <div class="produk-block">
-                        <img src="image/EMBER.png" alt="">
-                        <h2>Ovela Ember</h2>
-                        <a href="our_product/Ovela Ember.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/AMOURÉ.png" alt="">
-                        <h2>Ovela Amouré</h2>
-                        <a href="our_product/Ovela Amouré.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/Fleur de Vie (2).png" alt="">
-                        <h2>Ovela Fleur de Vie</h2>
-                        <a href="our_product/Ovela Fleur de Vie.html" class="button-produk">Read More</a>
-                    </div>
-                    <div class="produk-block">
-                        <img src="image/OBSIDIAN.png" alt="">
-                        <h2>Ovela Obsidian</h2>
-                        <a href="our_product/Ovela Obsidian.html" class="button-produk">Read More</a>
-                    </div>
-              </div>
-            </div>
-        </section>
-        <section id="testimoni">
-            <div class="testimoni-main-container">
-                    <div class="testimoni-container">
-                        <div class="testimoni-gmb-left">
-                            <img src="image/parfum ovela (7).png" alt="">
-                        </div>
-                        <div class="testomni-paragraf">   
-                            <h1>.Amira P., Jakarta</h1>
-                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                        </div>
-                    </div>
-                    <div class="testimoni-container">
-                        <div class="testimoni-gmb-left">
-                            <img src="image/parfum ovela.png" alt="">
-                        </div>
-                        <div class="testomni-paragraf">   
-                            <h1>.Amira P., Jakarta</h1>
-                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                        </div> 
-                    </div>
-                     <div class="testimoni-container">
-                        <div class="testimoni-gmb-left">
-                            <img src="image/parfum ovela (5).png" alt="">
-                        </div>
-                        <div class="testomni-paragraf">   
-                            <h1>.Amira P., Jakarta</h1>
-                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                        </div>
-                    </div>
 
-                    <div class="testimoni-container">
-                        <div class="testimoni-gmb-left">
-                            <img src="image/parfum ovela (6).png" alt="">
-                        </div>
-                        <div class="testomni-paragraf">   
-                            <h1>.Amira P., Jakarta</h1>
-                            <p>“Setiap semprotan Ovalen selalu membawa aku ke momen yang tenang dan berkelas. Wanginya lembut tapi tahan lama, benar-benar seperti identitasku sendiri</p>
-                        </div>
-                    </div>
-            </div> 
-            <div class="testimoni-second-container">
-              <div class="auto-slider">
-                    <div class="auto-slides">
-                        <img src="image/parfum ovela (1).png" class="auto-slide active">
-                        <img src="image/parfum ovela (4).png" class="auto-slide">
-                        <img src="image/parfum ovela (5).png" class="auto-slide">
-                      </div>
-                </div>
-            </div>
-        </section>
-        <section id="keunggulan">
-          <div class="keunggulan-container">
-            <h1 class="keunggulan-title">Keunggulan Produk Kami</h1>
-            <p class="keunggulan-text">
-              Setiap botol parfum Ovela dirancang bukan sekadar untuk mengharumkan, 
-              tetapi untuk meninggalkan kesan yang melekat. Kami percaya bahwa aroma 
-              yang tepat dapat menjadi simbol keanggunan dan kepribadian yang tak tergantikan.
+          <div class="keunggulan-item" data-aos="fade-up" data-aos-delay="1200">
+            <img src="image/ovela no background2.png" alt="Desain Elegan" class="keunggulan-icon" data-aos="fade-down"
+              data-aos-delay="1300">
+            <h3 data-aos="fade-up" data-aos-delay="1300">Desain Elegan</h3>
+            <p data-aos="fade-up" data-aos-delay="1300">
+              Botol kaca premium dengan sentuhan minimalis yang memancarkan kemewahan
+              di setiap detailnya — sempurna untuk gaya hidup modern.
             </p>
-          
-            <div class="keunggulan-grid">
-              <div class="keunggulan-item">
-                <img src="image/ovela no background.png" alt="Aroma Tahan Lama" class="keunggulan-icon">
-                <h3>Aroma Tahan Lama</h3>
-                <p>
-                  Menggunakan bahan berkualitas tinggi dengan konsentrasi parfum yang 
-                  membuat wanginya bertahan seharian tanpa memudar.
-                </p>
-              </div>
-            
-              <div class="keunggulan-item">
-                <img src="image/ovela no background2.png" alt="Desain Elegan" class="keunggulan-icon">
-                <h3>Desain Elegan</h3>
-                <p>
-                  Botol kaca premium dengan sentuhan minimalis yang memancarkan kemewahan 
-                  di setiap detailnya — sempurna untuk gaya hidup modern.
-                </p>
-              </div>
-            
-              <div class="keunggulan-item">
-                <img src="image/ovela no background3.png" alt="Bahan Aman & Ramah Lingkungan" class="keunggulan-icon">
-                <h3>Bahan Aman & Ramah Lingkungan</h3>
-                <p>
-                  Dibuat tanpa bahan berbahaya dan tanpa uji coba pada hewan, 
-                  menjadikan Ovela pilihan yang etis sekaligus memikat.
-                </p>
-              </div>
-            
-              <div class="keunggulan-item">
-                <img src="image/ovela no background4.png" alt="Aroma Signature" class="keunggulan-icon">
-                <h3>Aroma Signature</h3>
-                <p>
-                  Setiap varian Ovela memiliki karakter unik yang dirancang untuk mencerminkan 
-                  suasana hati dan kepribadian penggunanya.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="recomend">
-          <div class="varian-tag-line">
-            <h1>Recommendation</h1>
-            <p>Temukan aroma terbaik dari Ovela yang mencerminkan keanggunan, karakter, dan kepercayaan diri.</p>
           </div>
 
-          <div class="main-varian-blok">
-            <div class="varian-blok">
-              <img src="image/background_about (3).png" alt="Ovela Lumière">
-              <div class="varian-overlay">
-                <h2>Ovela Lumière</h2>
-                <p>Kelembutan aroma bunga putih dengan sentuhan amber hangat yang memikat.</p>
-              </div>
-            </div>
-
-            <div class="varian-blok">
-              <img src="image/background_about (2).png" alt="Ovela Noire">
-              <div class="varian-overlay">
-                <h2>Ovela Noire</h2>
-                <p>Aroma misterius dengan karakter bold, elegan, dan tak terlupakan.</p>
-              </div>
-            </div>
-
-            <div class="varian-blok">
-              <img src="image/background_about (4).png" alt="Ovela Pure Essence">
-              <div class="varian-overlay">
-                <h2>Ovela Pure Essence</h2>
-                <p>Kesegaran lembut yang menenangkan, diciptakan untuk jiwa yang tenang dan berkelas.</p>
-              </div>
-            </div>
-
-          </div>
-        </section>
-        <section id="kualitas">
-          <div class="kualitas-tag-line">
-            <h1>Our Quality</h1>
-            <p>Setiap parfum Ovela diciptakan dengan dedikasi tinggi untuk menghadirkan kesempurnaan di setiap semprotan.</p>
-          </div>
-          <div class="kualitas-grid">
-            <div class="kualitas-blok">
-              <img src="image/parfum ovela (2).png" alt="Luxurious Aroma">
-              <div class="kualitas-overlay">
-                <h2>Luxurious Aroma</h2>
-                <p>Wangi berkelas yang diracik dari bahan terbaik dunia, memberikan kesan elegan dan abadi.</p>
-              </div>
-            </div>
-            <div class="kualitas-blok">
-              <img src="image/parfum ovela (3).png" alt="Long Lasting">
-              <div class="kualitas-overlay">
-                <h2>Long Lasting</h2>
-                <p>Formula tahan lama yang menjaga aroma tetap segar dari pagi hingga malam hari.</p>
-              </div>
-            </div>
-            <div class="kualitas-blok">
-              <img src="image/parfum ovela (8).png" alt="Unique Scent">
-              <div class="kualitas-overlay">
-                <h2>Unique Scent</h2>
-                <p>Setiap varian memiliki identitas wangi yang khas, membuat setiap pengguna berbeda dari yang lain.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="Visi-Misi">
-          <div class="visi-misi-container">
-            <h1 class="judul-besar">Visi & Misi Kami</h1>
-            <div class="visi-misi-content">
-              <div class="blok visi">
-                <h2>Visi</h2>
-                <p>
-                  Menjadi brand parfum yang menghadirkan keanggunan dan kepercayaan diri di setiap aroma — 
-                  menciptakan pengalaman wangi yang tidak hanya memikat indera, tetapi juga meninggalkan kesan mendalam. 
-                  Ovela hadir untuk mereka yang ingin tampil berkarakter tanpa kehilangan sentuhan kelembutan.
-                </p>
-                </p>
-              </div>
-              <div class="blok misi">
-                <h2>Misi</h2>
-                <ul>
-                  <li>Mengutamakan kualitas dan keaslian aroma di setiap varian parfum.</li>
-                  <li>Menciptakan wewangian yang mencerminkan kepribadian dan suasana hati pemakainya.</li>
-                  <li>Menggabungkan bahan pilihan dengan desain botol yang elegan dan ramah lingkungan.</li>
-                  <li>Menjadi simbol kepercayaan diri dan keindahan bagi setiap individu yang mengenakannya.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="cta">
-          <div class="cta-container">
-            <h1 class="cta-title">Pesan Sekarang</h1>
-            <p class="cta-text">
-              Wujudkan website profesional impianmu hari ini. Desain elegan, performa cepat, dan harga terjangkau.
+          <div class="keunggulan-item" data-aos="fade-up" data-aos-delay="1400">
+            <img src="image/ovela no background3.png" alt="Bahan Aman & Ramah Lingkungan" class="keunggulan-icon"
+              data-aos="fade-down" data-aos-delay="1500">
+            <h3 data-aos="fade-up" data-aos-delay="1500">Bahan Aman & Ramah Lingkungan</h3>
+            <p data-aos="fade-up" data-aos-delay="1500">
+              Dibuat tanpa bahan berbahaya dan tanpa uji coba pada hewan,
+              menjadikan Ovela pilihan yang etis sekaligus memikat.
             </p>
-            <a href="#kontak" class="cta-button">Hubungi Kami</a>
           </div>
-        </section>
-        <section id="kontak">
-          <div class="kontak-container">
-            <h1 class="kontak-title">Hubungi Kami</h1>
-            <p class="kontak-text">
-              Jika Anda memiliki pertanyaan atau ingin berkolaborasi, jangan ragu untuk menghubungi kami.
+
+          <div class="keunggulan-item" data-aos="fade-up" data-aos-delay="1600">
+            <img src="image/ovela no background4.png" alt="Aroma Signature" class="keunggulan-icon" data-aos="fade-down"
+              data-aos-delay="1700">
+            <h3 data-aos="fade-up" data-aos-delay="1700">Aroma Signature</h3>
+            <p data-aos="fade-up" data-aos-delay="1700">
+              Setiap varian Ovela memiliki karakter unik yang dirancang untuk mencerminkan
+              suasana hati dan kepribadian penggunanya.
             </p>
-        
-            <form class="kontak-form">
-              <input type="text" placeholder="Nama Anda" required>
-              <input type="email" placeholder="Email Anda" required>
-              <textarea placeholder="Pesan Anda" required></textarea>
-              <button type="submit">Kirim Pesan</button>
-            </form>
-        
-            <div class="kontak-sosmed">
-              <p>atau hubungi kami melalui</p>
-              <div class="sosmed-icons">
-                <a href="#" class="icon ig" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="icon x" aria-label="Twitter / X">
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-                <a href="#" class="icon wa" aria-label="WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
           </div>
-        </section>
-    </main>
+        </div>
+      </div>
+    </section>
+
+    <section id="recomend">
+      <div class="varian-tag-line" data-aos="fade-up" data-aos-delay="400">
+        <h1 data-aos="slide-up" data-aos-delay="400">Recommendation</h1>
+        <p data-aos="slide-down">Temukan aroma terbaik dari Ovela yang mencerminkan keanggunan, karakter, dan
+          kepercayaan diri.</p>
+      </div>
+
+      <div class="main-varian-blok" data-aos="fade-down" data-aos-delay="600">
+        <div class="varian-blok" data-aos="fade-up" data-aos-delay="800">
+          <img src="image/background_about (3).png" alt="Ovela Lumière" data-aos="zoom-in" data-aos-delay="800">
+          <div class="varian-overlay">
+            <h2>Ovela Lumière</h2>
+            <p>Kelembutan aroma bunga putih dengan sentuhan amber hangat yang memikat.</p>
+          </div>
+        </div>
+
+        <div class="varian-blok" data-aos="fade-up" data-aos-delay="700">
+          <img src="image/background_about (2).png" alt="Ovela Noire" data-aos="zoom-in" data-aos-delay="1000">
+          <div class="varian-overlay">
+            <h2>Ovela Noire</h2>
+            <p>Aroma misterius dengan karakter bold, elegan, dan tak terlupakan.</p>
+          </div>
+        </div>
+
+        <div class="varian-blok" data-aos="fade-up" data-aos-delay="800">
+          <img src="image/background_about (4).png" alt="Ovela Pure Essence" data-aos="zoom-in" data-aos-delay="1200">
+          <div class="varian-overlay">
+            <h2>Ovela Pure Essence</h2>
+            <p>Kesegaran lembut yang menenangkan, diciptakan untuk jiwa yang tenang dan berkelas.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="kualitas">
+      <div class="kualitas-tag-line">
+        <h1>Our Quality</h1>
+        <p>Setiap parfum Ovela diciptakan dengan dedikasi tinggi untuk menghadirkan kesempurnaan di setiap semprotan.
+        </p>
+      </div>
+      <div class="kualitas-grid">
+        <div class="kualitas-blok">
+          <img src="image/parfum ovela (2).png" alt="Luxurious Aroma">
+          <div class="kualitas-overlay">
+            <h2>Luxurious Aroma</h2>
+            <p>Wangi berkelas yang diracik dari bahan terbaik dunia, memberikan kesan elegan dan abadi.</p>
+          </div>
+        </div>
+        <div class="kualitas-blok">
+          <img src="image/parfum ovela (3).png" alt="Long Lasting">
+          <div class="kualitas-overlay">
+            <h2>Long Lasting</h2>
+            <p>Formula tahan lama yang menjaga aroma tetap segar dari pagi hingga malam hari.</p>
+          </div>
+        </div>
+        <div class="kualitas-blok">
+          <img src="image/parfum ovela (8).png" alt="Unique Scent">
+          <div class="kualitas-overlay">
+            <h2>Unique Scent</h2>
+            <p>Setiap varian memiliki identitas wangi yang khas, membuat setiap pengguna berbeda dari yang lain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Visi-Misi">
+      <div class="visi-misi-container">
+        <h1 class="judul-besar">Visi & Misi Kami</h1>
+        <div class="visi-misi-content">
+          <div class="blok visi">
+            <h2>Visi</h2>
+            <p>
+              Menjadi brand parfum yang menghadirkan keanggunan dan kepercayaan diri di setiap aroma —
+              menciptakan pengalaman wangi yang tidak hanya memikat indera, tetapi juga meninggalkan kesan mendalam.
+              Ovela hadir untuk mereka yang ingin tampil berkarakter tanpa kehilangan sentuhan kelembutan.
+            </p>
+            </p>
+          </div>
+          <div class="blok misi">
+            <h2>Misi</h2>
+            <ul>
+              <li>Mengutamakan kualitas dan keaslian aroma di setiap varian parfum.</li>
+              <li>Menciptakan wewangian yang mencerminkan kepribadian dan suasana hati pemakainya.</li>
+              <li>Menggabungkan bahan pilihan dengan desain botol yang elegan dan ramah lingkungan.</li>
+              <li>Menjadi simbol kepercayaan diri dan keindahan bagi setiap individu yang mengenakannya.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta">
+      <div class="cta-container">
+        <h1 class="cta-title">Pesan Sekarang</h1>
+        <p class="cta-text">
+          Wujudkan website profesional impianmu hari ini. Desain elegan, performa cepat, dan harga terjangkau.
+        </p>
+        <a href="#kontak" class="cta-button">Hubungi Kami</a>
+      </div>
+    </section>
+    <section id="kontak">
+      <div class="kontak-container">
+        <h1 class="kontak-title">Hubungi Kami</h1>
+        <p class="kontak-text">
+          Jika Anda memiliki pertanyaan atau ingin berkolaborasi, jangan ragu untuk menghubungi kami.
+        </p>
+        <form class="kontak-form">
+          <input type="text" placeholder="Nama Anda" required>
+          <input type="email" placeholder="Email Anda" required>
+          <textarea placeholder="Pesan Anda" required></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+        <div class="kontak-sosmed">
+          <p>atau hubungi kami melalui</p>
+          <div class="sosmed-icons">
+            <a href="#" class="icon ig" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="icon x" aria-label="Twitter / X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" class="icon wa" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  //   AOS.init({
+  //   disable: function () {
+  //     return window.innerWidth < 768; // matikan AOS di layar kecil
+  //   }
+  // });
+</script>
+
 </html>

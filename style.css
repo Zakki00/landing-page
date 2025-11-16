@@ -6,6 +6,18 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
+ 
+}
+html,
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 html {
@@ -114,9 +126,11 @@ html {
 }
 
 @media (max-width: 768px) {
+
   .navbar {
     border-radius: 0;
     margin: 0;
+   
   }
 
   .menu-toggle {
@@ -278,6 +292,9 @@ html {
   height: 100vh;
   color: #6e2d11;
   display: flex;
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 60%),
+        url('image/white.png');
 }
 
 .home-content-left {
@@ -351,6 +368,7 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 5vh;
 }
 
 .parfum-slideshow {
@@ -449,22 +467,29 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-
 .about_block {
   position: relative;
   flex: 1;
-  transition: all 0.5s ease;
+  transition: flex 0.5s ease;
   overflow: hidden;
 }
 
-.about_block img {
+/* Wrapper untuk animasi AOS */
+.about_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about_inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: filter 0.5s ease, transform 0.5s ease;
 }
 
-.about_block h2 {
+.about_inner h2 {
+  text-align: center;
   font-family: "Orbitron", sans-serif;
   position: absolute;
   font-size: clamp(24px, 5vw, 60px);
@@ -474,10 +499,9 @@ html {
   color: white;
   opacity: 0;
   transition: opacity 0.5s ease;
-  text-align: center;
 }
 
-/* Efek hover di desktop */
+/* Hover efek */
 #about:hover .about_block:not(:hover) {
   flex: 0.5;
   filter: brightness(30%);
@@ -495,6 +519,7 @@ html {
 .about_block:hover h2 {
   opacity: 1;
 }
+
 
 /* RESPONSIVE - di HP */
 @media (max-width: 768px) {
@@ -944,22 +969,28 @@ hr {
   line-height: 1.4;
   color: #555;
 }
-
-.testimoni-container:nth-child(1) {
+/* target container berdasarkan urutan wrapper di dalam parent */
+.testimoni-main-container .testimoni-wrapper:nth-child(1) .testimoni-container {
   transform: translateX(0);
 }
 
-.testimoni-container:nth-child(2) {
+.testimoni-main-container .testimoni-wrapper:nth-child(2) .testimoni-container {
   transform: translateX(50px);
 }
 
-.testimoni-container:nth-child(3) {
+.testimoni-main-container .testimoni-wrapper:nth-child(3) .testimoni-container {
   transform: translateX(100px);
 }
 
-.testimoni-container:nth-child(4) {
+.testimoni-main-container .testimoni-wrapper:nth-child(4) .testimoni-container {
   transform: translateX(150px);
 }
+
+/* optional: smoothing agar tidak melompat saat load */
+.testimoni-container {
+  transition: transform 400ms ease, opacity 400ms ease;
+}
+
 
 .testimoni-second-container {
   min-height: 100vh;
@@ -994,18 +1025,17 @@ hr {
 .auto-slide.active {
   opacity: 1;
 }
-
 @media (max-width: 768px) {
   #testimoni {
     display: flex;
     flex-direction: column;
-    /* Pastikan flex aktif */
     align-items: center;
+    width: 100%;
+    overflow: hidden; /* mencegah konten melebar */
   }
 
   .testimoni-second-container {
-    order: -1;
-    /* Biar tampil di atas */
+    order: -1; /* tampil di atas */
     width: 100%;
     min-height: 40vh;
   }
@@ -1019,24 +1049,33 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 20px 0;
   }
-
+  .testimoni-wrapper{
+    display: flex;
+    justify-content: center;
+   
+  }
   .testimoni-container {
-    width: 90%;
+    width: 92%;
     height: auto;
-    flex-direction: column;
+    display: flex;
+    flex-direction: column !important; /* kunci agar tidak berubah */
+    align-items: center;
     text-align: center;
     border-radius: 30px;
+    overflow: hidden;
+   
+    /* FIX UTAMA: hapus semua transform desktop */
     transform: none !important;
+    opacity: 1 !important; 
   }
 
   .testimoni-gmb-left {
     width: 100%;
-    height: 120px;
+    height: 150px; /* lebih stabil */
     overflow: hidden;
-    /* ini penting biar border radius-nya kepotong pas */
     border-radius: 30px 30px 0 0;
   }
 
@@ -1044,15 +1083,13 @@ hr {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30px 30px 0 0;
-    /* biar nyatu sama kontainer */
     display: block;
-    /* hilangkan celah default inline */
+    border-radius: 30px 30px 0 0;
   }
 
   .testomni-paragraf {
     width: 100%;
-    padding: 15px;
+    padding: 18px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1060,13 +1097,16 @@ hr {
   }
 
   .testomni-paragraf h1 {
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
   .testomni-paragraf p {
     font-size: 13px;
+    line-height: 1.4;
   }
 }
+
 
 /* ====== SECTION KEUNGGULAN ====== */
 #keunggulan {
@@ -1265,7 +1305,7 @@ hr {
 }
 
 .varian-tag-line p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #bfbfbf;
   margin-top: 15px;
   line-height: 1.7;
