@@ -9,8 +9,8 @@ body {
   color: #fff;
 
   background:
-    linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%),
-    url('../image/white2.jpg');
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%),
+    url('../image/gold.png');
 
   background-size: cover;
   background-position: center;
@@ -31,10 +31,10 @@ body {
   height: 80vh;
   margin-left: 10vh;
   border-radius: 60px;
-  background-image: url(../image/white3.png);
 
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
   border: 1.5px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 
   position: relative;
   display: flex;
@@ -54,12 +54,10 @@ body {
   width: 420px;
   height: 420px;
 
-  background: radial-gradient(
-    circle,
-    rgba(255, 136, 0, 0.452) 0%,
-    rgba(253, 164, 0, 0.651) 40%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      #eff4c2 0%,
+      #F4E0E8 40%,
+      transparent 70%);
 
   filter: blur(60px);
   animation: glow 7s ease-in-out infinite alternate;
@@ -74,12 +72,10 @@ body {
   width: 500px;
   height: 500px;
 
-  background: radial-gradient(
-    circle,
-    rgba(255, 220, 200, 0.30) 0%,
-    rgba(255, 170, 150, 0.15) 40%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(207, 48, 199, 0.3) 0%,
+      rgba(143, 12, 99, 0.15) 40%,
+      transparent 70%);
 
   filter: blur(100px);
   animation: glow 10s ease-in-out infinite alternate-reverse;
@@ -87,14 +83,28 @@ body {
 
 /* animasi halus seperti napas cahaya */
 @keyframes glow {
-  0% { transform: scale(1); opacity: 0.7; }
-  100% { transform: scale(1.15); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
 }
 
 
 @keyframes glow {
-  0% { opacity: 0.4; transform: scale(1);}
-  100% { opacity: 0.8; transform: scale(1.1);}
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
 }
 
 .judul {
@@ -108,7 +118,7 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 20px;
-   font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
   color: #000000;
   text-shadow: 0 0 20px rgba(255, 180, 150, 0.3);
 }
@@ -147,7 +157,7 @@ body {
 .btn-beli {
   display: inline-block;
   background: linear-gradient(90deg, #f5e7e0, #f9d9c3);
-  color: #702424;
+  color: #473b23;
   padding: 12px 30px;
   border-radius: 30px;
   text-decoration: none;
@@ -157,7 +167,7 @@ body {
 }
 
 .btn-beli:hover {
-  background: linear-gradient(90deg, #ffffff, #f5e7e0);
+  background: linear-gradient(90deg, #ffffff, #e9d83e);
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(255, 220, 200, 0.3);
 }
@@ -168,7 +178,7 @@ body {
 .container2 {
   width: 100%;
   height: 100vh;
-  
+
 
   display: flex;
   align-items: center;
@@ -185,11 +195,19 @@ body {
   top: 0;
   width: 100%;
   height: 60%;
- 
+
   filter: blur(100px);
   z-index: 1;
 }
 
+/* Wrapper untuk animasi mengapung */
+.float-wrapper {
+  display: inline-block;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+/* Style gambar parfum */
 .gmb-parfum img {
   position: relative;
   z-index: 3;
@@ -197,43 +215,39 @@ body {
   width: 500px;
   height: auto;
   right: 50px;
-  transform: rotate(-5deg);
+
+  /* efek awal */
+  transform: rotate(-5deg) scale(1);
   filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
-  animation: float 3s ease-in-out infinite;
-}
-.gmb-parfum img {
-  transition: 
-    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 1s ease,
-    opacity 0.9s ease;
-  transform-origin: center;
+
+  transition:
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.2s ease,
+    opacity 1s ease;
 }
 
-/* Hover super halus dan elegan */
-.gmb-parfum img:hover {
-  transform: translateY(-12px) rotate(-2deg) scale(1.04);
-  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.35));
-  opacity: 0.97;
+/* Animasi mengapung */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-/* Cahaya lembut yang muncul perlahan */
-.gmb-parfum img:hover {
-  animation: smooth-glow 1.6s ease forwards;
-}
-
-/* Pantulan cahaya yang sangat lembut */
+/* Glow halus */
 @keyframes smooth-glow {
   0% {
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
   }
-  100% {
-    filter: drop-shadow(0 30px 45px rgba(0, 0, 0, 0.35));
-  }
-}
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(-5deg); }
-  50% { transform: translateY(-10px) rotate(-5deg); }
+  100% {
+    filter: drop-shadow(0 40px 60px rgba(255, 180, 220, 0.4));
+  }
 }
 
 .altar {
@@ -258,50 +272,74 @@ body {
    RESPONSIVE DESIGN
 ====================================== */
 @media (max-width: 768px) {
+
+  /* memastikan konten benar-benar center dan rapi */
   .content {
     flex-direction: column-reverse;
     width: 100%;
     overflow: hidden;
+    align-items: center;
+    /* <-- kunci */
+    justify-content: center;
+    /* <-- kunci */
   }
 
+  /* container 1: teks */
   .container1 {
     height: auto;
-    padding: 60px 25px;
+    margin-right: 90px;
+    padding: 55px 20px;
+    /* <-- dari 60px jadi lebih proporsional */
     text-align: center;
-   
+    margin-bottom: 10px;
+    border-radius: 15px;
+    /* <-- jarak antar container dipendekkan */
   }
 
   .judul {
     max-width: 90%;
+    margin: 0 auto;
+    /* <-- supaya benar-benar center */
   }
 
   .judul h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .tagline {
     font-size: 1rem;
+    margin-top: 8px;
   }
 
   .deskripsi {
     font-size: 0.95rem;
+    margin-top: 10px;
   }
 
+  /* container 2: gambar */
   .container2 {
     height: auto;
-    padding: 30px 0 80px;
+    padding: 15px 0 40px;
+    /* <-- awalnya 30px 0 80px, kini lebih rapat */
     overflow: hidden;
-}
+    margin-top: 5px;
+    /* <-- supaya tidak jauh dari container1 */
+  }
 
+  /* gambar */
   .gmb-parfum img {
-    width: 240px;
+    width: 230px;
+    /* sedikit lebih kecil agar tidak geser kanan */
     height: auto;
     right: 0;
     top: 0;
+    margin: 0 auto;
+    /* <-- benar-benar center */
+    display: block;
     filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.3));
   }
 
   .altar {
-    height: 180px;
+    height: 160px;
   }
 }
