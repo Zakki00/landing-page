@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e9dad2;
+    font-family: "Playfair Display", serif;
+}
+
+.hero {
+    position: relative;
+    width: a;
+    min-height: 100vh;
+    padding: 40px 80px;
+    box-sizing: border-box;
+}
+
+/* --- Teks Utama --- */
+.subtitle {
+    font-size: 48px;
+    color: #a34273;
+    margin: 0;
+}
+
+.brand {
+    font-size: 110px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 8px;
+}
+
+.series {
+    font-size: 48px;
+    margin: 20px 0 40px;
+    color: #b56184;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #5a4d4b;
+}
+
+.desc {
+    width: 50%;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #5a4d4b;
+}
+
+/* --- Harga --- */
+.price-box {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.price {
+    background: #ee4b76;
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-text {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #5a4d4b;
+}
+
+/* --- Gambar --- */
+.flower-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    /* sesuaikan */
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.flower-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    /* sesuaikan */
+    pointer-events: none;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    /* kamu bisa sesuaikan */
+    opacity: 0.45;
+    /* biar halus seperti background blur */
+    pointer-events: none;
+    z-index: -2;
+    /* tetap di belakang elemen lain */
+}
+
+.parfum-img {
+    width: 720px;
+    position: absolute;
+        bottom: 40px;
+        left: 50%;
+        z-index: 10;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 20px;
+        padding-bottom: 180px;
+        /* ruang aman agar parfum tidak menabrak teks */
+        min-height: auto;
+        position: relative;
+    }
+
+    /* --- Teks Utama --- */
+    .subtitle {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 52px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .series {
+        font-size: 26px;
+        text-align: center;
+        margin: 10px 0 15px;
+    }
+
+    .tagline {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .desc {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0 auto;
+    }
+
+    /* --- Harga --- */
+    .price-box {
+        width: 100%;
+        max-width: 320px;
+        margin: 25px auto 0;
+    }
+
+    /* --- Dekorasi --- */
+    .flower-left {
+        width: 180px;
+        bottom: -200px;
+        left: 0;
+        opacity: 0.55;
+    }
+
+    .flower-right {
+        width: 170px;
+        top: 0;
+        right: 0;
+        opacity: 0.55;
+    }
+
+    .shadow {
+        width: 180px;
+        top: 0;
+        left: 0;
+        opacity: 0.25;
+    }
+
+    /* --- Gambar Parfum (TANPA TRANSFORM) --- */
+    .parfum-img {
+        width: 260px;
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        margin-left: -130px;
+        /* pusatkan */
+        z-index: 5;
+    }
+}

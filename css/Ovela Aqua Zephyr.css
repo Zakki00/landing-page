@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #d8e9ff;
+    font-family: "Playfair Display", serif;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ==========================
+      HERO SECTION
+   ========================== */
+.hero-aqua {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 80px;
+    background: url('../image/Aqua.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    /* aman */
+}
+
+/* ==========================
+      SHADOW KIRI ATAS
+   ========================== */
+.shadow-aqua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ==========================
+      BOTOL PARFUM
+   ========================== */
+.parfum-aqua {
+    position: absolute;
+    height: 95%;
+    right: 25%;
+    top: 5%;
+    transform: rotate(-12deg);
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* ==========================
+      TEKS BESAR KANAN
+   ========================== */
+.big-text {
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    font-size: 90px;
+    font-weight: 600;
+    color: #032859;
+    line-height: 1.1;
+    text-align: right;
+    z-index: 2;
+}
+
+/* ==========================
+      KONTEN TEKS KIRI
+   ========================== */
+.content-aqua {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    
+}
+
+.title-aqua {
+    font-size: 90px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.desc-aqua {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.7;
+    width: 70%;
+    font-weight: 300;
+   
+}
+
+/* ==========================
+      BOX HARGA
+   ========================== */
+.price-box-aqua {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 380px;
+    background: #032859;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.price-aqua {
+    background: #0e4fa8;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price-info {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* ==========================
+        MOBILE
+   ========================== */
+@media(max-width: 768px) {
+
+    .hero-aqua {
+        padding: 25px;
+        background-position: top;
+        padding-bottom: 120px;
+        /* BIAR GAK TERPOTONG */
+    }
+
+    .shadow-aqua {
+        width: 220px;
+        opacity: 0.25;
+    }
+
+    .big-text {
+        font-size: 40px;
+        right: 15px;
+        top: 20px;
+    }
+
+    .parfum-aqua {
+        height: 350px;
+        right: 10%;
+        top: 65%;
+        transform: translateX(50%) rotate(-10deg);
+    }
+
+    .content-aqua {
+        width: 100%;
+    }
+
+    .title-aqua {
+        font-size: 50px;
+        color: #fff;
+        margin-top: 100px;
+    }
+
+    .desc-aqua {
+        width: 100%;
+        font-size: 16px;
+        color: #f2f2f2;
+    }
+
+    .price-box-aqua {
+        width: 100%;
+    }
+
+    .price-aqua {
+        padding: 15px;
+        font-size: 18px;
+    }
+}

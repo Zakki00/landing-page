@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background: #d8d8d8;
+}
+
+/* ==========================
+        HERO SECTION
+   ========================== */
+.hero-black {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 80px;
+    background-image: url("../image/smoke.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Kiri - Judul besar */
+.content-left {
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    z-index: 5;
+}
+
+.title-black {
+    font-size: 85px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+}
+
+/* BOX HARGA */
+.price-box-black {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.price-black {
+    background: #1f1f1f;
+    padding: 20px 28px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price-info-black {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* BOTOL PARFUM */
+.parfum-black {
+    position: absolute;
+    height: 88%;
+    right: 25%;
+    top: 8%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* KANAN - TEKS */
+.content-right {
+    position: absolute;
+    right: 40px;
+    top: 180px;
+    width: 55vh;
+    color: #fff;
+    z-index: 5;
+}
+
+.sub-title-black {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.divider-black {
+    width: 120px;
+    margin: 8px 0 20px 0;
+}
+
+.desc-black {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+/* ==========================
+          MOBILE
+   ========================== */
+@media(max-width: 768px) {
+
+    .hero-black {
+        padding: 20px;
+        height: 100vh;
+        /* <- penting */
+        background-position: center;
+    }
+
+    /* Judul kiri */
+    .content-left {
+        position: relative;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .title-black {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .price-box-black {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Botol Tengah */
+    .parfum-black {
+        position: relative;
+        width: auto;
+        
+        height: 100%;
+        /* <-- berubah */
+        height: 270px;
+        margin: 100px auto 40px auto;
+        right: 0;
+        top: 0;
+        transform: none;
+        /* <-- hilangkan */
+        display: block;
+    }
+
+    /* Teks kanan sekarang di bawah botol */
+    .content-right {
+        position: relative;
+        /* <-- berubah */
+        right: 0;
+        top: 0;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .sub-title-black {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .desc-black {
+        font-size: 15px;
+        color: #f1f1f1;
+        margin-bottom: 40px;
+    }
+}
