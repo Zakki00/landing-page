@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Ovela Blanche.css" />
-    <title>Ovela Lumière</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="container1">
-        <div class="judul">
-          <h1>Ovela Blanche</h1>
-          <p class="tagline">Kesucian aroma putih yang anggun.</p>
-          <p class="deskripsi">
-            Ovela Blanche memancarkan kesegaran putih yang bersih, menghadirkan
-            wangi bunga lembut dan sentuhan powdery yang menenangkan. Aromanya
-            sederhana namun anggun, seperti kain sutra yang jatuh perlahan di
-            udara tenang.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.150.000</span>
-          </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/Ovela Blanche.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Ovela Blanche</title>
+</head>
+
+<body>
+  <div class="content">
+
+    <div class="container1">
+      <div class="judul">
+
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-delay="200">
+          Ovela Blanche
+        </h1>
+
+        <p class="tagline"
+           data-aos="fade-up"
+           data-aos-duration="1200"
+           data-aos-delay="400">
+          Kesucian aroma putih yang anggun.
+        </p>
+
+        <p class="deskripsi"
+           data-aos="fade-up"
+           data-aos-duration="1300"
+           data-aos-delay="600">
+          Ovela Blanche memancarkan kesegaran putih yang bersih, menghadirkan
+          wangi bunga lembut dan sentuhan powdery yang menenangkan. Aromanya
+          sederhana namun anggun, seperti kain sutra yang jatuh perlahan di
+          udara tenang.
+        </p>
+
+        <div class="harga"
+             data-aos="fade-up"
+             data-aos-duration="1300"
+             data-aos-delay="800">
+          <span class="label">Harga:</span>
+          <span class="nominal">Rp 1.150.000</span>
+        </div>
+
+        <a href="../index.html#kontak"
+           class="btn-beli"
+           data-aos="fade-up"
+           data-aos-duration="1400"
+           data-aos-delay="950">
+          Pesan Sekarang
+        </a>
+
+      </div>
+    </div>
+
+    <div class="container2">
+
+      <div class="gmb-parfum">
+        <div class="float-wrapper"
+             data-aos="fade-right"
+             data-aos-duration="1400"
+             data-aos-delay="500">
+          <img src="../image/Blanche1.png" alt="Ovela Parfum" />
         </div>
       </div>
 
-      <div class="container2">
-        <div class="gmb-parfum">
-          <div class="float-wrapper">
-            <img src="../image/Blanche1.png" alt="Ovela Parfum" />
-          </div>
-        </div>
-        <div class="altar">
-          <img src="../image/altar.png" alt="Altar podium" />
-        </div>
+      <div class="altar"
+           data-aos="fade-in"
+           data-aos-duration="1700"
+           data-aos-delay="700">
+        <img src="../image/altar.png" alt="Altar podium" />
       </div>
+
     </div>
-  </body>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  </script>
+
+</body>
 </html>

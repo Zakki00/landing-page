@@ -4,36 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/Ovela Obsidian.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <title>Ovela Obsidian</title>
   </head>
   <body>
     <div class="content">
       <div class="container1">
         <div class="judul">
-          <h1>Ovela Obsidian</h1>
-          <p class="tagline">Gelap, tegas, dan penuh wibawa.</p>
-          <p class="deskripsi">
-            Ovela Obsidian menghadirkan kekuatan aroma dark woody, patchouli,
-            dan resin pekat yang tegas. Wangi ini memancarkan aura kuat dan
-            dominan, seperti batu obsidian yang berkilau dalam kegelapan.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.300.000</span>
+
+          <div class="text-wrapper" data-aos="fade-right">
+            <h1>Ovela Obsidian</h1>
+            <p class="tagline">Gelap, tegas, dan penuh wibawa.</p>
+            <p class="deskripsi">
+              Ovela Obsidian menghadirkan kekuatan aroma dark woody, patchouli,
+              dan resin pekat yang tegas. Wangi ini memancarkan aura kuat dan
+              dominan, seperti batu obsidian yang berkilau dalam kegelapan.
+            </p>
+            <div class="harga">
+              <span class="label">Harga:</span>
+              <span class="nominal">Rp 1.300.000</span>
+            </div>
+            <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
           </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+
         </div>
       </div>
+
       <div class="container2">
         <div class="gmb-parfum">
-          <div class="float-wrapper">
+          <div class="float-wrapper" data-aos="fade-left">
             <img src="../image/OBSIDIAN1.png" alt="Ovela Parfum" />
           </div>
         </div>
+
         <div class="altar">
           <img src="../image/altar.png" alt="Altar podium" />
         </div>
       </div>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800 });
+    </script>
   </body>
 </html>

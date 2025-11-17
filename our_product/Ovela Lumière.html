@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Ovela Lumière.css" />
-    <title>Ovela Lumière</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="container1">
-        <div class="judul">
-          <h1>Ovela Lumière</h1>
-          <p class="tagline">Keanggunan yang bertahan lebih lama dari waktu.</p>
-          <p class="deskripsi">
-            Terinspirasi dari harmoni antara cahaya dan ketenangan, Ovela
-            Lumière menghadirkan aroma lembut bunga melati, sentuhan kayu
-            cendana, dan lapisan musk halus yang menenangkan. Parfum ini
-            dirancang untuk mereka yang menghargai kesederhanaan, tapi tetap
-            memancarkan pesona.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.250.000</span>
-          </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ovela Lumière</title>
+
+  <link rel="stylesheet" href="../css/Ovela Lumière.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="container1">
+      <div class="judul">
+
+        <h1 data-aos="fade-down" data-aos-delay="400">Ovela Lumière</h1>
+
+        <p class="tagline" data-aos="fade-down" data-aos-delay="600">
+          Keanggunan yang bertahan lebih lama dari waktu.
+        </p>
+
+        <p class="deskripsi" data-aos="fade-down" data-aos-delay="800">
+          Terinspirasi dari harmoni antara cahaya dan ketenangan, Ovela
+          Lumière menghadirkan aroma lembut bunga melati, sentuhan kayu
+          cendana, dan lapisan musk halus yang menenangkan. Parfum ini
+          dirancang untuk mereka yang menghargai kesederhanaan, tapi tetap
+          memancarkan pesona.
+        </p>
+
+        <div class="harga">
+          <span class="label" data-aos="fade-down" data-aos-delay="1000">Harga:</span>
+          <span class="nominal" data-aos="fade-down" data-aos-delay="1200">Rp 1.250.000</span>
         </div>
-      </div>
-      <div class="container2">
-        <div class="gmb-parfum">
-          <div class="float-wrapper">
-            <img src="../image/lumere1.png" alt="Ovela Parfum" />
-          </div>
-        </div>
-        <div class="altar">
-          <img src="../image/altar.png" alt="Altar podium" />
-        </div>
+
+        <a href="../index.html#kontak" 
+           class="btn-beli" 
+           data-aos="fade-down" 
+           data-aos-delay="1400">Pesan Sekarang</a>
+
       </div>
     </div>
-  </body>
+
+    <div class="container2">
+      <div class="gmb-parfum" data-aos="fade-left" data-aos-delay="600">
+        <div class="float-wrapper">
+          <img src="../image/lumere1.png" alt="Ovela Parfum" />
+        </div>
+      </div>
+
+      <div class="altar" data-aos="fade-up" data-aos-delay="900">
+        <img src="../image/altar.png" alt="Altar podium" />
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-out-cubic"
+    });
+  </script>
+
+</body>
 </html>

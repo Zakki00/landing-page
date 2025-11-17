@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Ovela Fleur de Vie.css" />
-    <title>Ovela Fleur de Vie</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="container1">
-        <div class="judul">
-          <h1>Ovela Fleur de Vie</h1>
-          <p class="tagline">Bunga kehidupan yang penuh energi.</p>
-          <p class="deskripsi">
-            Ovela Fleur de Vie memadukan aroma floral segar, buah sitrus, dan
-            sentuhan hijau yang cerah. Wangi ini membawa semangat hidup, seperti
-            bunga yang mekar di pagi hari saat matahari baru menyentuh daun.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.210.000</span>
-          </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ovela Fleur de Vie</title>
+
+  <link rel="stylesheet" href="../css/Ovela Fleur de Vie.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="container1">
+      <div class="judul">
+
+        <h1 data-aos="fade-down" data-aos-delay="400">Ovela Fleur de Vie</h1>
+
+        <p class="tagline" data-aos="fade-down" data-aos-delay="600">
+          Bunga kehidupan yang penuh energi.
+        </p>
+
+        <p class="deskripsi" data-aos="fade-down" data-aos-delay="800">
+          Ovela Fleur de Vie memadukan aroma floral segar, buah sitrus, dan
+          sentuhan hijau yang cerah. Wangi ini membawa semangat hidup, seperti
+          bunga yang mekar di pagi hari saat matahari baru menyentuh daun.
+        </p>
+
+        <div class="harga">
+          <span class="label" data-aos="fade-down" data-aos-delay="1000">Harga:</span>
+          <span class="nominal" data-aos="fade-down" data-aos-delay="1200">Rp 1.210.000</span>
         </div>
-      </div>
-      <div class="container2">
-        <div class="gmb-parfum">
-          <div class="float-wrapper">
-            <img src="../image/Fleur de Vie1.png" alt="Ovela Parfum" />
-          </div>
-        </div>
-        <div class="altar">
-          <img src="../image/altar.png" alt="Altar podium" />
-        </div>
+
+        <a href="../index.html#kontak" 
+           class="btn-beli" 
+           data-aos="fade-down" 
+           data-aos-delay="1400">Pesan Sekarang</a>
+
       </div>
     </div>
-  </body>
+
+    <div class="container2">
+      <div class="gmb-parfum" data-aos="fade-left" data-aos-delay="600">
+        <div class="float-wrapper">
+          <img src="../image/Fleur de Vie1.png" alt="Ovela Parfum" />
+        </div>
+      </div>
+
+      <div class="altar" data-aos="fade-up" data-aos-delay="900">
+        <img src="../image/altar.png" alt="Altar podium" />
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-out-cubic"
+    });
+  </script>
+
+</body>
 </html>

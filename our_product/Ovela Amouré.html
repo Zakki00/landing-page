@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Ovela Amouré.css" />
-    <title>Ovela Amouré</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="container1">
-        <div class="judul">
-          <h1>Ovela Amouré</h1>
-          <p class="tagline">Cinta yang lembut dan feminin.</p>
-          <p class="deskripsi">
-            Ovela Amouré membalut indra dengan lembutnya mawar muda, buah-buahan
-            manis, dan sentuhan musk romantis. Wangi yang feminin ini terasa
-            seperti pelukan hangat yang penuh kasih dan ketenangan.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.200.000</span>
-          </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/Ovela Amouré.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Ovela Amouré</title>
+</head>
+
+<body>
+  <div class="content">
+
+    <div class="container1">
+      <div class="judul" data-aos="fade-up" data-aos-duration="1000">
+
+        <h1 data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+          Ovela Amouré
+        </h1>
+
+        <p class="tagline"
+           data-aos="fade-up"
+           data-aos-duration="1200"
+           data-aos-delay="350">
+          Cinta yang lembut dan feminin.
+        </p>
+
+        <p class="deskripsi"
+           data-aos="fade-up"
+           data-aos-duration="1300"
+           data-aos-delay="550">
+          Ovela Amouré membalut indra dengan lembutnya mawar muda, buah-buahan
+          manis, dan sentuhan musk romantis. Wangi yang feminin ini terasa
+          seperti pelukan hangat yang penuh kasih dan ketenangan.
+        </p>
+
+        <div class="harga"
+             data-aos="fade-up"
+             data-aos-duration="1200"
+             data-aos-delay="750">
+          <span class="label">Harga:</span>
+          <span class="nominal">Rp 1.200.000</span>
         </div>
-      </div>
-      <div class="container2">
-        <div class="gmb-parfum">
-          <div class="float-wrapper">
-            <img src="../image/AMOURÉ1.png" alt="Ovela Parfum" />
-          </div>
-        </div>
-        <div class="altar">
-          <img src="../image/altar.png" alt="Altar podium" />
-        </div>
+
+        <a href="../index.html#kontak"
+           class="btn-beli"
+           data-aos="fade-up"
+           data-aos-duration="1400"
+           data-aos-delay="900">
+          Pesan Sekarang
+        </a>
+
       </div>
     </div>
-  </body>
+
+    <div class="container2">
+
+      <div class="gmb-parfum">
+        <div class="float-wrapper"
+             data-aos="fade-left"
+             data-aos-duration="1400"
+             data-aos-delay="500">
+          <img src="../image/AMOURÉ1.png" alt="Ovela Parfum" />
+        </div>
+      </div>
+
+      <div class="altar"
+           data-aos="fade-in"
+           data-aos-duration="1600"
+           data-aos-delay="700">
+        <img src="../image/altar.png" alt="Altar podium" />
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  </script>
+
+</body>
 </html>

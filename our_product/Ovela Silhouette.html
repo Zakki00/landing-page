@@ -4,37 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/Ovela Silhouette.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <title>Ovela Silhouette</title>
   </head>
   <body>
     <div class="content">
+
       <div class="container1">
-        <div class="judul">
-          <h1>Ovela Silhouette</h1>
-          <p class="tagline">Bayangan keanggunan yang tetap membekas.</p>
-          <p class="deskripsi">
+        <div class="judul" data-aos="fade-up" data-aos-duration="900">
+
+          <h1 data-aos="fade-up" data-aos-delay="200">Ovela Silhouette</h1>
+          <p class="tagline" data-aos="fade-up" data-aos-delay="350">
+            Bayangan keanggunan yang tetap membekas.
+          </p>
+
+          <p class="deskripsi" data-aos="fade-up" data-aos-delay="500">
             Dengan aroma floral gelap dan sedikit sentuhan woody, Ovela
             Silhouette menghadirkan kesan misterius yang lembut, seperti jejak
             langkah terakhir yang masih tertinggal di udara. Wangi yang halus,
             tenang, namun sulit dilupakan.
           </p>
-          <div class="harga">
+
+          <div class="harga" data-aos="fade-up" data-aos-delay="650">
             <span class="label">Harga:</span>
             <span class="nominal">Rp 1.180.000</span>
           </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+
+          <a href="../index.html#kontak" class="btn-beli" 
+             data-aos="fade-up" data-aos-delay="800">
+            Pesan Sekarang
+          </a>
+
         </div>
       </div>
+
       <div class="container2">
+
         <div class="gmb-parfum">
-          <div class="float-wrapper">
+          <div class="float-wrapper" 
+               data-aos="fade-left" 
+               data-aos-duration="1100" 
+               data-aos-delay="400">
             <img src="../image/Silhouette1.png" alt="Ovela Parfum" />
           </div>
         </div>
-        <div class="altar">
+
+        <div class="altar" 
+             data-aos="fade-up" 
+             data-aos-duration="1200" 
+             data-aos-delay="600">
           <img src="../image/altar.png" alt="Altar podium" />
         </div>
+
       </div>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "ease-out",
+      });
+    </script>
+
   </body>
 </html>

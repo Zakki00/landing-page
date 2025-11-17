@@ -4,37 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/Ovela Pure Essence.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
     <title>Ovela Pure Essence</title>
   </head>
   <body>
     <div class="content">
       <div class="container1">
         <div class="judul">
-          <h1>Ovela Pure Essence</h1>
-          <p class="tagline">Sederhana, murni, dan elegan.</p>
-          <p class="deskripsi">
-            Ovela Pure Essence merayakan keindahan kesederhanaan lewat aroma
-            bening yang lembut, memadukan kesegaran citrus ringan dengan lapisan
-            kayu halus. Wangi yang bersih ini diciptakan bagi mereka yang
-            percaya bahwa kemurnian adalah kemewahan sejati.
-          </p>
-          <div class="harga">
-            <span class="label">Harga:</span>
-            <span class="nominal">Rp 1.100.000</span>
+
+          <!-- WRAPPER TEKS -->
+          <div class="text-wrapper" data-aos="fade-up" data-aos-duration="900">
+            <h1>Ovela Pure Essence</h1>
+            <p class="tagline">Sederhana, murni, dan elegan.</p>
+            <p class="deskripsi">
+              Ovela Pure Essence merayakan keindahan kesederhanaan lewat aroma
+              bening yang lembut, memadukan kesegaran citrus ringan dengan lapisan
+              kayu halus. Wangi yang bersih ini diciptakan bagi mereka yang
+              percaya bahwa kemurnian adalah kemewahan sejati.
+            </p>
+
+            <div class="harga">
+              <span class="label">Harga:</span>
+              <span class="nominal">Rp 1.100.000</span>
+            </div>
+
+            <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
           </div>
-          <a href="../index.html#kontak" class="btn-beli">Pesan Sekarang</a>
+
         </div>
       </div>
+
       <div class="container2">
         <div class="gmb-parfum">
-          <div class="float-wrapper">
+          <div class="float-wrapper" data-aos="zoom-in" data-aos-duration="900">
             <img src="../image/Pure Essence1.png" alt="Ovela Parfum" />
           </div>
         </div>
-        <div class="altar">
+
+        <div class="altar" data-aos="fade-in" data-aos-duration="1200">
           <img src="../image/altar.png" alt="Altar podium" />
         </div>
       </div>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "ease-out",
+      });
+    </script>
   </body>
 </html>
